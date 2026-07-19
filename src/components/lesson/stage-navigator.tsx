@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useCallback } from "react";
+import { useState, useCallback, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import { ArrowLeft, CheckCircle2, Trophy, Zap } from "lucide-react";
@@ -8,6 +8,7 @@ import { createClient } from "@/lib/supabase/client";
 import { Button } from "@/components/ui/button";
 import { StageProgress } from "./stage-progress";
 import { StageRenderer } from "./stage-renderer";
+import { FadeIn, LevelUpOverlay } from "@/components/shared/animations";
 
 interface StageBase {
   id: string;
@@ -50,6 +51,19 @@ export function StageNavigator({
   const [totalQuestions, setTotalQuestions] = useState(0);
   const [showSummary, setShowSummary] = useState(false);
   const [submitting, setSubmitting] = useState(false);
+  const [initialLevel, setInitialLevel] = useState(0);
+  const [newLevel, setNewLevel] = useState<number | null>(null);
+
+  useEffect(() => {
+    supabase
+      .from("user_xp")
+      .select("level")
+      .eq("user_id", userId)
+      .single()
+      .then(({ data }) => {
+        if (data) setInitialLevel(data.level);
+      });
+  }, [userId, supabase]);
 
   const currentStage = stages[currentIndex];
   const isLastStage = currentIndex === stages.length - 1;
@@ -81,12 +95,20 @@ export function StageNavigator({
 
       if (isLastStage) {
         setShowSummary(true);
+        const { data: xp } = await supabase
+          .from("user_xp")
+          .select("level")
+          .eq("user_id", userId)
+          .single();
+        if (xp && xp.level > initialLevel) {
+          setNewLevel(xp.level);
+        }
       } else {
         setDirection(1);
         setCurrentIndex((i) => i + 1);
       }
     },
-    [currentStage.id, userId, isLastStage, supabase],
+    [currentStage.id, userId, isLastStage, supabase, initialLevel],
   );
 
   const handleBack = useCallback(() => {
@@ -111,6 +133,15 @@ export function StageNavigator({
 
   return (
     <div className="space-y-6">
+      <AnimatePresence>
+        {newLevel && (
+          <LevelUpOverlay
+            level={newLevel}
+            onClose={() => setNewLevel(null)}
+          />
+        )}
+      </AnimatePresence>
+
       <StageProgress current={currentIndex} total={stages.length} />
 
       <AnimatePresence mode="wait" custom={direction}>
@@ -124,18 +155,20 @@ export function StageNavigator({
             transition={{ type: "spring", stiffness: 260, damping: 24 }}
             className="rpg-card-border"
           >
-            <div className="rounded-xl bg-card p-6">
-              <div className="mb-4">
-                <h2 className="font-heading text-base text-primary">
-                  {currentStage.title}
-                </h2>
+            <FadeIn direction="up">
+              <div className="rounded-xl bg-card p-6">
+                <div className="mb-4">
+                  <h2 className="font-heading text-base text-primary">
+                    {currentStage.title}
+                  </h2>
+                </div>
+                <StageRenderer
+                  stage={currentStage}
+                  stages={stages}
+                  onComplete={handleComplete}
+                />
               </div>
-              <StageRenderer
-                stage={currentStage}
-                stages={stages}
-                onComplete={handleComplete}
-              />
-            </div>
+            </FadeIn>
           </motion.div>
         ) : (
           <motion.div
