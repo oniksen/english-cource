@@ -1,0 +1,13 @@
+{
+  "name": "english-cource",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Web platform for tracking English learning progress",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "typecheck": "tsc --noEmit"
+  }
+}

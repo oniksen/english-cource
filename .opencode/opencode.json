@@ -1,0 +1,35 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "instructions": ["AGENTS.md"],
+
+  "plugin": [
+    "superpowers@git+https://github.com/obra/superpowers.git"
+  ],
+
+  "mcp": {
+    "supabase": {
+      "type": "remote",
+      "url": "https://mcp.supabase.com/mcp"
+    },
+    "vercel": {
+      "type": "remote",
+      "url": "https://mcp.vercel.com"
+    },
+    "sqlite": {
+      "type": "local",
+      "command": ["npx", "-y", "mcp-server-sqlite-npx", "./data/app.db"]
+    },
+    "memory": {
+      "type": "local",
+      "command": ["npx", "-y", "@modelcontextprotocol/server-memory"]
+    },
+    "magic-ui": {
+      "type": "local",
+      "command": ["npx", "-y", "@magicuidesign/mcp@latest"]
+    },
+    "github": {
+      "type": "local",
+      "command": ["npx", "-y", "@modelcontextprotocol/server-github"]
+    }
+  }
+}
