@@ -102,9 +102,7 @@ export function ListeningStage({ content, onComplete }: ListeningStageProps) {
       setIndex((i) => i + 1);
       setChecked(false);
     } else {
-      const isCurrect =
-        answer.trim().toLowerCase() === expected.toLowerCase();
-      onComplete(correctCount + (isCurrect ? 1 : 0), Math.max(gaps.length, content.questions.length));
+      onComplete(correctCount, Math.max(gaps.length, content.questions.length));
     }
   }, [index, gaps.length, content.questions.length, onComplete, correctCount, answer, expected]);
 

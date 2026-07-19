@@ -105,6 +105,7 @@ export function BossStage({ content, stages, onComplete }: BossStageProps) {
           clearInterval(timerRef.current!);
           setFinished(true);
           setWon(false);
+          onComplete(score, questions.length);
           return 0;
         }
         return t - 1;
@@ -132,7 +133,7 @@ export function BossStage({ content, stages, onComplete }: BossStageProps) {
         setTimeout(() => {
           setFinished(true);
           setWon(true);
-          onComplete(questions.length, questions.length);
+          onComplete(score + 1, questions.length);
         }, 1500);
         return;
       }

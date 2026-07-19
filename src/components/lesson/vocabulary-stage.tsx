@@ -61,10 +61,7 @@ export function VocabularyStage({ content, onComplete }: VocabularyStageProps) {
     if (index + 1 < content.words.length) {
       setIndex((i) => i + 1);
     } else {
-      onComplete(
-        correctCount + (selected === currentWord.translation ? 1 : 0),
-        content.words.length,
-      );
+      onComplete(correctCount, content.words.length);
     }
   }, [index, content.words.length, onComplete, correctCount, selected, currentWord]);
 

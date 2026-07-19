@@ -72,7 +72,7 @@ export function ReadingStage({ content, onComplete }: ReadingStageProps) {
     if (index + 1 < content.questions.length) {
       setIndex((i) => i + 1);
     } else {
-      onComplete(correctCount + (isCorrect ? 1 : 0), content.questions.length);
+      onComplete(correctCount, content.questions.length);
     }
   }, [index, content.questions.length, onComplete, correctCount, isCorrect]);
 

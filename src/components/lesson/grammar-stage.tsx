@@ -51,9 +51,7 @@ export function GrammarStage({ content, onComplete }: GrammarStageProps) {
       setAnswer("");
       setChecked(false);
     } else {
-      const isCorrect =
-        answer.trim().toLowerCase() === expected.toLowerCase();
-      onComplete(correctCount + (isCorrect ? 1 : 0), content.exercises.length);
+      onComplete(correctCount, content.exercises.length);
     }
   }, [index, content.exercises.length, onComplete, correctCount, answer, expected]);
 

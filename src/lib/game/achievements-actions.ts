@@ -38,7 +38,8 @@ export async function checkAchievements(userId: string) {
       case "lessons": {
         const { count } = await supabase
           .from("user_progress")
-          .select("*", { count: "exact", head: true });
+          .select("*", { count: "exact", head: true })
+          .eq("user_id", userId);
         achieved = (count ?? 0) >= achievement.required_count;
         break;
       }
