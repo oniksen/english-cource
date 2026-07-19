@@ -30,5 +30,5 @@ export async function register(formData: FormData) {
   if (error) throw new Error(error.message);
 
   revalidatePath("/", "layout");
-  redirect("/pending");
+  redirect("/dashboard");
 }

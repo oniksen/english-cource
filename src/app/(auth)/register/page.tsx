@@ -14,7 +14,9 @@ export default function RegisterPage() {
         await register(formData);
         return { error: null };
       } catch (e) {
-        return { error: (e as Error).message };
+        const error = e as Error & { digest?: string };
+        if (error.digest?.startsWith("NEXT_REDIRECT")) throw e;
+        return { error: error.message };
       }
     },
     { error: null },
