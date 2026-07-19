@@ -1,0 +1,3433 @@
+# English Quest — Full Curriculum Plan (A1 – C1)
+#
+# This file is the SOURCE OF TRUTH for all learning content.
+# Structure: CEFR Level → Sublevel → Module → Lesson → Stages
+#
+# Stages: vocabulary | grammar | reading | listening | speaking | writing | boss
+# Speaking & Writing stages have is_active: false by default (future AI check).
+
+curriculum:
+  - code: A1
+    title: "A1 — Beginner"
+    description: "Основы: знакомство, числа, семья, ежедневная жизнь, простые действия."
+    order: 1
+    is_active: true
+    sublevels:
+      - code: A1.1
+        title: "A1.1 — Starter"
+        description: "Zero to basic communication."
+        order: 1
+        is_active: true
+        modules:
+          - title: "Hello & Goodbye"
+            description: "Знакомство, приветствия, алфавит, глагол to be."
+            order: 1
+            difficulty: 1
+            estimated_minutes: 45
+            xp_reward: 200
+            is_active: true
+            lessons:
+              - title: "Greetings & Introductions"
+                order: 1
+                xp_reward: 50
+                is_active: true
+                stages:
+                  - type: vocabulary
+                    title: "Hello Words"
+                    order: 1
+                    is_active: true
+                    content:
+                      prompt: "Basic greetings and introductions"
+                      words:
+                        - word: "hello"
+                          translation: "привет"
+                          example: "Hello, how are you?"
+                        - word: "goodbye"
+                          translation: "до свидания"
+                          example: "Goodbye, see you later."
+                        - word: "hi"
+                          translation: "привет"
+                          example: "Hi, my name is John."
+                        - word: "bye"
+                          translation: "пока"
+                          example: "Bye, see you tomorrow."
+                        - word: "name"
+                          translation: "имя"
+                          example: "My name is Anna."
+                        - word: "friend"
+                          translation: "друг"
+                          example: "She is my friend."
+                        - word: "please"
+                          translation: "пожалуйста"
+                          example: "Please sit down."
+                        - word: "thanks"
+                          translation: "спасибо"
+                          example: "Thanks for the help."
+                  - type: grammar
+                    title: "Verb to be — am/is/are"
+                    order: 2
+                    is_active: true
+                    content:
+                      prompt: "Positive and negative forms of to be"
+                      rules:
+                        - "I am (I'm) — I am a student."
+                        - "He/She/It is (He's) — She is a teacher."
+                        - "You/We/They are (You're) — They are friends."
+                      exercises:
+                        - "I ___ a student. (am)"
+                        - "She ___ a doctor. (is)"
+                        - "They ___ from France. (are)"
+                  - type: reading
+                    title: "Meet My Friends"
+                    order: 3
+                    is_active: true
+                    content:
+                      text: "Hi! I am Tom. I am from the USA. This is my friend Anna. She is from Canada. We are students. We are happy to meet you!"
+                      questions:
+                        - "What is his name? (Tom)"
+                        - "Where is Tom from? (the USA)"
+                        - "Is Anna from the USA? (No, she is from Canada.)"
+                  - type: listening
+                    title: "Listen & Choose"
+                    order: 4
+                    is_active: true
+                    content:
+                      audio_prompt: "Basic introductions dialog"
+                      script: "A: Hello, I'm Mike. B: Hi Mike, I'm Sarah. A: Nice to meet you, Sarah. B: Nice to meet you too!"
+                      questions:
+                        - "What is the first person's name? (Mike)"
+                        - "What is the second person's name? (Sarah)"
+                  - type: speaking
+                    title: "Introduce Yourself"
+                    order: 5
+                    is_active: false
+                    content:
+                      prompt: "Say your name, where you are from, and your occupation."
+                  - type: writing
+                    title: "Write About You"
+                    order: 6
+                    is_active: false
+                    content:
+                      prompt: "Write 3 sentences about yourself using to be."
+                  - type: boss
+                    title: "Introduction Boss"
+                    order: 7
+                    is_active: true
+                    content:
+                      prompt: "Mix of vocabulary, grammar, and comprehension."
+                      stages_covered: [1, 2, 3, 4]
+
+              - title: "The Alphabet & Spelling"
+                order: 2
+                xp_reward: 45
+                is_active: true
+                stages:
+                  - type: vocabulary
+                    title: "Alphabet Letters"
+                    order: 1
+                    is_active: true
+                    content:
+                      prompt: "Letters A-Z with example words"
+                      words:
+                        - word: "apple"
+                          translation: "яблоко"
+                        - word: "book"
+                          translation: "книга"
+                        - word: "cat"
+                          translation: "кот"
+                        - word: "dog"
+                          translation: "собака"
+                        - word: "egg"
+                          translation: "яйцо"
+                        - word: "fish"
+                          translation: "рыба"
+                  - type: grammar
+                    title: "Questions with to be"
+                    order: 2
+                    is_active: true
+                    content:
+                      prompt: "Question forms: Am I? Is he? Are you?"
+                      rules:
+                        - "Am I...? — Am I late?"
+                        - "Is he/she/it...? — Is she a teacher?"
+                        - "Are you/we/they...? — Are you from Spain?"
+                      exercises:
+                        - "___ you a student? (Are)"
+                        - "___ she your sister? (Is)"
+                        - "___ they at home? (Are)"
+                  - type: reading
+                    title: "The Alphabet Song"
+                    order: 3
+                    is_active: true
+                    content:
+                      text: "A is for apple. B is for book. C is for cat. D is for dog. E is for egg. F is for fish. The alphabet is fun!"
+                      questions:
+                        - "What is B for? (book)"
+                        - "Is the alphabet fun? (Yes, it is.)"
+                  - type: listening
+                    title: "Spell the Name"
+                    order: 4
+                    is_active: true
+                    content:
+                      audio_prompt: "A person spells their name."
+                      script: "My name is Kate. K-A-T-E."
+                      questions:
+                        - "How do you spell Kate? (K-A-T-E)"
+                  - type: boss
+                    title: "Alphabet Boss"
+                    order: 5
+                    is_active: true
+                    content:
+                      prompt: "Spelling and to be questions mix."
+                      stages_covered: [1, 2, 3, 4]
+
+              - title: "Numbers 1–20 & Age"
+                order: 3
+                xp_reward: 50
+                is_active: true
+                stages:
+                  - type: vocabulary
+                    title: "Numbers 1–20"
+                    order: 1
+                    is_active: true
+                    content:
+                      prompt: "Numbers from one to twenty"
+                      words:
+                        - word: "one"
+                          translation: "один"
+                        - word: "two"
+                          translation: "два"
+                        - word: "three"
+                          translation: "три"
+                        - word: "four"
+                          translation: "четыре"
+                        - word: "five"
+                          translation: "пять"
+                        - word: "six"
+                          translation: "шесть"
+                        - word: "seven"
+                          translation: "семь"
+                        - word: "eight"
+                          translation: "восемь"
+                        - word: "nine"
+                          translation: "девять"
+                        - word: "ten"
+                          translation: "десять"
+                  - type: grammar
+                    title: "How old are you?"
+                    order: 2
+                    is_active: true
+                    content:
+                      prompt: "Questions about age with to be"
+                      rules:
+                        - "How old are you? — I am 25 years old."
+                        - "How old is he? — He is 30 years old."
+                      exercises:
+                        - "How old ___ you? (are)"
+                        - "I ___ 20 years old. (am)"
+                  - type: reading
+                    title: "Ages"
+                    order: 3
+                    is_active: true
+                    content:
+                      text: "Tom is 10 years old. Anna is 8 years old. Mike is 12 years old. They are students."
+                      questions:
+                        - "How old is Tom? (10 years old)"
+                        - "Is Mike 8 years old? (No, he is 12 years old.)"
+                  - type: listening
+                    title: "Listen to Ages"
+                    order: 4
+                    is_active: true
+                    content:
+                      audio_prompt: "People saying their age."
+                      script: "Hi, I am Lisa. I am 22. This is my brother Ben. He is 18."
+                      questions:
+                        - "How old is Lisa? (22)"
+                        - "How old is Ben? (18)"
+                  - type: boss
+                    title: "Numbers Boss"
+                    order: 5
+                    is_active: true
+                    content:
+                      prompt: "Numbers and age questions mix."
+                      stages_covered: [1, 2, 3, 4]
+
+              - title: "Countries & Nationalities"
+                order: 4
+                xp_reward: 55
+                is_active: true
+                stages:
+                  - type: vocabulary
+                    title: "Countries"
+                    order: 1
+                    is_active: true
+                    content:
+                      prompt: "Country names and nationalities"
+                      words:
+                        - word: "the USA"
+                          translation: "США"
+                          example: "I am from the USA."
+                        - word: "Canada"
+                          translation: "Канада"
+                          example: "She is from Canada."
+                        - word: "the UK"
+                          translation: "Великобритания"
+                          example: "He is from the UK."
+                        - word: "American"
+                          translation: "американский"
+                          example: "I am American."
+                        - word: "Canadian"
+                          translation: "канадский"
+                          example: "She is Canadian."
+                        - word: "British"
+                          translation: "британский"
+                          example: "He is British."
+                  - type: grammar
+                    title: "to be — negative"
+                    order: 2
+                    is_active: true
+                    content:
+                      prompt: "Negative forms: am not, is not, are not"
+                      rules:
+                        - "I am not (I'm not) — I am not from Spain."
+                        - "He/She/It is not (isn't) — She isn't a doctor."
+                        - "You/We/They are not (aren't) — They aren't students."
+                      exercises:
+                        - "She ___ from Italy. (isn't)"
+                        - "We ___ teachers. (aren't)"
+                  - type: reading
+                    title: "Where Are They From?"
+                    order: 3
+                    is_active: true
+                    content:
+                      text: "Maria is from Spain. She is Spanish. Pierre is from France. He is French. They are not from the same country."
+                      questions:
+                        - "Where is Maria from? (Spain)"
+                        - "Is Pierre Spanish? (No, he is French.)"
+                  - type: listening
+                    title: "Country Match"
+                    order: 4
+                    is_active: true
+                    content:
+                      audio_prompt: "People saying their nationality."
+                      script: "I am Carlos. I am from Mexico. I am Mexican."
+                      questions:
+                        - "Where is Carlos from? (Mexico)"
+                  - type: boss
+                    title: "Countries Boss"
+                    order: 5
+                    is_active: true
+                    content:
+                      prompt: "Countries, nationalities, and to be negative."
+                      stages_covered: [1, 2, 3, 4]
+
+          - title: "Numbers & World"
+            description: "Числа, цвета, предметы, артикли."
+            order: 2
+            difficulty: 1
+            estimated_minutes: 50
+            xp_reward: 220
+            is_active: true
+            lessons:
+              - title: "Colors & Descriptions"
+                order: 1
+                xp_reward: 50
+                is_active: true
+                stages:
+                  - type: vocabulary
+                    title: "Colors"
+                    order: 1
+                    is_active: true
+                    content:
+                      prompt: "Basic colors"
+                      words:
+                        - word: "red"
+                          translation: "красный"
+                          example: "The apple is red."
+                        - word: "blue"
+                          translation: "синий"
+                          example: "The sky is blue."
+                        - word: "green"
+                          translation: "зеленый"
+                          example: "The tree is green."
+                        - word: "yellow"
+                          translation: "желтый"
+                          example: "The sun is yellow."
+                        - word: "black"
+                          translation: "черный"
+                          example: "My bag is black."
+                        - word: "white"
+                          translation: "белый"
+                          example: "The snow is white."
+                  - type: grammar
+                    title: "Articles a/an"
+                    order: 2
+                    is_active: true
+                    content:
+                      prompt: "a vs an based on the following sound"
+                      rules:
+                        - "Use 'a' before consonant sounds: a book, a dog"
+                        - "Use 'an' before vowel sounds: an apple, an egg"
+                      exercises:
+                        - "___ cat (a)"
+                        - "___ elephant (an)"
+                        - "___ orange (an)"
+                        - "___ student (a)"
+                  - type: reading
+                    title: "Colorful World"
+                    order: 3
+                    is_active: true
+                    content:
+                      text: "I have a red pen and a blue book. She has an orange bag and a yellow pencil. The classroom is colorful!"
+                      questions:
+                        - "What color is the pen? (red)"
+                        - "Does she have a blue bag? (No, she has an orange bag.)"
+                  - type: listening
+                    title: "What Color Is It?"
+                    order: 4
+                    is_active: true
+                    content:
+                      audio_prompt: "Describing objects by color."
+                      script: "My car is red. My friend's car is blue."
+                      questions:
+                        - "What color is my car? (red)"
+                  - type: boss
+                    title: "Colors Boss"
+                    order: 5
+                    is_active: true
+                    content:
+                      prompt: "Colors and articles a/an."
+                      stages_covered: [1, 2, 3, 4]
+
+              - title: "Plural Nouns"
+                order: 2
+                xp_reward: 50
+                is_active: true
+                stages:
+                  - type: vocabulary
+                    title: "Classroom Objects"
+                    order: 1
+                    is_active: true
+                    content:
+                      prompt: "Common classroom items"
+                      words:
+                        - word: "pen"
+                          translation: "ручка"
+                        - word: "pencil"
+                          translation: "карандаш"
+                        - word: "book"
+                          translation: "книга"
+                        - word: "desk"
+                          translation: "парта"
+                        - word: "chair"
+                          translation: "стул"
+                        - word: "bag"
+                          translation: "сумка"
+                        - word: "table"
+                          translation: "стол"
+                        - word: "door"
+                          translation: "дверь"
+                  - type: grammar
+                    title: "Plural: -s / -es"
+                    order: 2
+                    is_active: true
+                    content:
+                      prompt: "Regular plural forms"
+                      rules:
+                        - "Add -s: book → books, pen → pens"
+                        - "Add -es after s, sh, ch, x, o: box → boxes, bus → buses"
+                        - "Irregular: child → children, man → men, woman → women"
+                      exercises:
+                        - "one cat, two ___ (cats)"
+                        - "one box, three ___ (boxes)"
+                        - "one child, five ___ (children)"
+                  - type: reading
+                    title: "In the Classroom"
+                    order: 3
+                    is_active: true
+                    content:
+                      text: "The classroom has four desks and ten chairs. There are three books on the table. Two pens are on the desk."
+                      questions:
+                        - "How many desks are there? (four)"
+                        - "Where are the pens? (on the desk)"
+                  - type: listening
+                    title: "Count the Objects"
+                    order: 4
+                    is_active: true
+                    content:
+                      audio_prompt: "Counting classroom items."
+                      script: "There are five books, three pens, and two bags."
+                      questions:
+                        - "How many books? (five)"
+                        - "How many bags? (two)"
+                  - type: boss
+                    title: "Plurals Boss"
+                    order: 5
+                    is_active: true
+                    content:
+                      prompt: "Vocabulary and plural forms."
+                      stages_covered: [1, 2, 3, 4]
+
+              - title: "Numbers 20–100 & Prices"
+                order: 3
+                xp_reward: 55
+                is_active: true
+                stages:
+                  - type: vocabulary
+                    title: "Numbers 20–100"
+                    order: 1
+                    is_active: true
+                    content:
+                      prompt: "Numbers twenty through one hundred"
+                      words:
+                        - word: "twenty"
+                          translation: "двадцать"
+                        - word: "thirty"
+                          translation: "тридцать"
+                        - word: "forty"
+                          translation: "сорок"
+                        - word: "fifty"
+                          translation: "пятьдесят"
+                        - word: "sixty"
+                          translation: "шестьдесят"
+                        - word: "seventy"
+                          translation: "семьдесят"
+                        - word: "eighty"
+                          translation: "восемьдесят"
+                        - word: "ninety"
+                          translation: "девяносто"
+                        - word: "one hundred"
+                          translation: "сто"
+                  - type: grammar
+                    title: "this / that / these / those"
+                    order: 2
+                    is_active: true
+                    content:
+                      prompt: "Demonstratives for near vs far, singular vs plural"
+                      rules:
+                        - "this (near, singular) — This book is mine."
+                        - "that (far, singular) — That car is red."
+                        - "these (near, plural) — These pens are new."
+                        - "those (far, plural) — Those houses are big."
+                      exercises:
+                        - "___ is my pen (near). (This)"
+                        - "___ are my books (near). (These)"
+                        - "___ is a car (far). (That)"
+                  - type: reading
+                    title: "At the Store"
+                    order: 3
+                    is_active: true
+                    content:
+                      text: "This pen costs $2. That notebook is $5. These pencils are $1 each. How much is this bag? It is $30."
+                      questions:
+                        - "How much is the pen? ($2)"
+                        - "How much is the notebook? ($5)"
+                        - "How much is the bag? ($30)"
+                  - type: listening
+                    title: "Listen to Prices"
+                    order: 4
+                    is_active: true
+                    content:
+                      audio_prompt: "Store items with prices."
+                      script: "The red T-shirt is $25. The blue jeans are $45. The black shoes are $60."
+                      questions:
+                        - "How much is the T-shirt? ($25)"
+                        - "How much are the shoes? ($60)"
+                  - type: boss
+                    title: "Numbers Boss 2"
+                    order: 5
+                    is_active: true
+                    content:
+                      prompt: "Numbers, prices, this/that/these/those."
+                      stages_covered: [1, 2, 3, 4]
+
+              - title: "Basic Adjectives"
+                order: 4
+                xp_reward: 50
+                is_active: true
+                stages:
+                  - type: vocabulary
+                    title: "Simple Adjectives"
+                    order: 1
+                    is_active: true
+                    content:
+                      prompt: "Common descriptive words"
+                      words:
+                        - word: "big"
+                          translation: "большой"
+                        - word: "small"
+                          translation: "маленький"
+                        - word: "old"
+                          translation: "старый"
+                        - word: "new"
+                          translation: "новый"
+                        - word: "good"
+                          translation: "хороший"
+                        - word: "bad"
+                          translation: "плохой"
+                        - word: "beautiful"
+                          translation: "красивый"
+                        - word: "ugly"
+                          translation: "уродливый"
+                  - type: grammar
+                    title: "Adjective + Noun word order"
+                    order: 2
+                    is_active: true
+                    content:
+                      prompt: "Adjectives go before nouns in English"
+                      rules:
+                        - "Adjective comes BEFORE the noun: a big house, a small cat"
+                        - "NOT: a house big"
+                      exercises:
+                        - "a ___ car (new)"
+                        - "a ___ book (good)"
+                        - "an ___ woman (old)"
+                  - type: reading
+                    title: "Describe My Room"
+                    order: 3
+                    is_active: true
+                    content:
+                      text: "My room is big. There is a new bed and an old desk. The window is big and beautiful. I have a small cat."
+                      questions:
+                        - "Is the room small? (No, it is big.)"
+                        - "What color is the bed? (Not mentioned)"
+                  - type: listening
+                    title: "How Does It Look?"
+                    order: 4
+                    is_active: true
+                    content:
+                      audio_prompt: "Describing items."
+                      script: "I have a new phone. It is small and beautiful."
+                      questions:
+                        - "Is the phone new? (Yes)"
+                        - "Is the phone big? (No, it is small.)"
+                  - type: boss
+                    title: "Adjectives Boss"
+                    order: 5
+                    is_active: true
+                    content:
+                      prompt: "Adjective order and vocabulary."
+                      stages_covered: [1, 2, 3, 4]
+
+          - title: "My Family & Home"
+            description: "Семья, дом, there is/are, предлоги места."
+            order: 3
+            difficulty: 2
+            estimated_minutes: 55
+            xp_reward: 240
+            is_active: true
+            lessons:
+              - title: "Family Members"
+                order: 1
+                xp_reward: 50
+                is_active: true
+                stages:
+                  - type: vocabulary
+                    title: "Family Words"
+                    order: 1
+                    is_active: true
+                    content:
+                      prompt: "Family member vocabulary"
+                      words:
+                        - word: "mother"
+                          translation: "мама"
+                          example: "My mother is a teacher."
+                        - word: "father"
+                          translation: "папа"
+                          example: "My father is a doctor."
+                        - word: "sister"
+                          translation: "сестра"
+                          example: "I have one sister."
+                        - word: "brother"
+                          translation: "брат"
+                          example: "My brother is 10."
+                        - word: "grandmother"
+                          translation: "бабушка"
+                        - word: "grandfather"
+                          translation: "дедушка"
+                        - word: "aunt"
+                          translation: "тетя"
+                        - word: "uncle"
+                          translation: "дядя"
+                        - word: "cousin"
+                          translation: "двоюродный брат/сестра"
+                  - type: grammar
+                    title: "Possessive 's"
+                    order: 2
+                    is_active: true
+                    content:
+                      prompt: "Showing ownership with 's"
+                      rules:
+                        - "Add 's to a person: Tom's book, Anna's cat"
+                        - "For plural ending in s, add just ': my parents' car"
+                      exercises:
+                        - "This is ___ book. (Tom → Tom's)"
+                        - "That is ___ cat. (my sister → my sister's)"
+                        - "___ house is big. (My parents → My parents')"
+                  - type: reading
+                    title: "My Family"
+                    order: 3
+                    is_active: true
+                    content:
+                      text: "This is my family. My mother's name is Anna. My father's name is Mark. I have one sister. Her name is Lisa. My grandmother's house is near our house. She is 70 years old."
+                      questions:
+                        - "What is my mother's name? (Anna)"
+                        - "Do I have a brother? (No, I have a sister.)"
+                        - "How old is grandmother? (70 years old)"
+                  - type: listening
+                    title: "Family Description"
+                    order: 4
+                    is_active: true
+                    content:
+                      audio_prompt: "Person describing family."
+                      script: "I have a big family. My brother's name is Alex. My sister's name is Emma. My parents are teachers."
+                      questions:
+                        - "What is my brother's name? (Alex)"
+                        - "What do my parents do? (They are teachers.)"
+                  - type: boss
+                    title: "Family Boss"
+                    order: 5
+                    is_active: true
+                    content:
+                      prompt: "Family vocabulary and possessive 's."
+                      stages_covered: [1, 2, 3, 4]
+
+              - title: "Rooms & Furniture"
+                order: 2
+                xp_reward: 50
+                is_active: true
+                stages:
+                  - type: vocabulary
+                    title: "House & Rooms"
+                    order: 1
+                    is_active: true
+                    content:
+                      prompt: "Parts of a house and furniture"
+                      words:
+                        - word: "kitchen"
+                          translation: "кухня"
+                        - word: "bedroom"
+                          translation: "спальня"
+                        - word: "bathroom"
+                          translation: "ванная"
+                        - word: "living room"
+                          translation: "гостиная"
+                        - word: "dining room"
+                          translation: "столовая"
+                        - word: "bed"
+                          translation: "кровать"
+                        - word: "table"
+                          translation: "стол"
+                        - word: "chair"
+                          translation: "стул"
+                        - word: "sofa"
+                          translation: "диван"
+                        - word: "fridge"
+                          translation: "холодильник"
+                  - type: grammar
+                    title: "There is / There are"
+                    order: 2
+                    is_active: true
+                    content:
+                      prompt: "Existential there + to be"
+                      rules:
+                        - "There is + singular: There is a bed in the room."
+                        - "There are + plural: There are two chairs."
+                        - "There isn't / There aren't for negative"
+                      exercises:
+                        - "___ a big window in the kitchen. (There is)"
+                        - "___ three books on the table. (There are)"
+                        - "___ a cat under the table? (Is there)"
+                  - type: reading
+                    title: "My Dream House"
+                    order: 3
+                    is_active: true
+                    content:
+                      text: "My dream house has a big living room. There is a new sofa and a big TV. There are three bedrooms. The kitchen is small but beautiful. There is a garden behind the house."
+                      questions:
+                        - "How many bedrooms are there? (three)"
+                        - "Is the kitchen big? (No, it is small.)"
+                        - "Is there a garden? (Yes, there is.)"
+                  - type: listening
+                    title: "House Tour"
+                    order: 4
+                    is_active: true
+                    content:
+                      audio_prompt: "House description."
+                      script: "Welcome to my house. There is a living room, a kitchen, and two bedrooms. The bathroom is next to the bedrooms."
+                      questions:
+                        - "How many bedrooms? (two)"
+                        - "Where is the bathroom? (next to the bedrooms)"
+                  - type: boss
+                    title: "House Boss"
+                    order: 5
+                    is_active: true
+                    content:
+                      prompt: "House vocabulary and there is/are."
+                      stages_covered: [1, 2, 3, 4]
+
+              - title: "Prepositions of Place"
+                order: 3
+                xp_reward: 55
+                is_active: true
+                stages:
+                  - type: vocabulary
+                    title: "Location Words"
+                    order: 1
+                    is_active: true
+                    content:
+                      prompt: "Prepositions of place"
+                      words:
+                        - word: "in"
+                          translation: "в"
+                          example: "The pen is in the bag."
+                        - word: "on"
+                          translation: "на"
+                          example: "The book is on the table."
+                        - word: "under"
+                          translation: "под"
+                          example: "The cat is under the chair."
+                        - word: "next to"
+                          translation: "рядом с"
+                          example: "The school is next to the park."
+                        - word: "behind"
+                          translation: "за"
+                          example: "The garden is behind the house."
+                        - word: "in front of"
+                          translation: "перед"
+                          example: "The car is in front of the house."
+                        - word: "between"
+                          translation: "между"
+                          example: "The bank is between the shop and the cafe."
+                  - type: grammar
+                    title: "Questions: Where is/are?"
+                    order: 2
+                    is_active: true
+                    content:
+                      prompt: "Asking and answering about location"
+                      rules:
+                        - "Where is + singular: Where is the book? — It is on the table."
+                        - "Where are + plural: Where are the pens? — They are in the bag."
+                      exercises:
+                        - "Where ___ the cat? (is) — It is ___ the bed. (under)"
+                        - "Where ___ my shoes? (are) — They are ___ the door. (behind)"
+                  - type: reading
+                    title: "Find the Objects"
+                    order: 3
+                    is_active: true
+                    content:
+                      text: "Where are my things? My phone is on the table. My keys are in my bag. The cat is under the sofa. My glasses are next to the bed."
+                      questions:
+                        - "Where is the phone? (on the table)"
+                        - "Where are the keys? (in my bag)"
+                        - "Where is the cat? (under the sofa)"
+                  - type: listening
+                    title: "Listen & Place"
+                    order: 4
+                    is_active: true
+                    content:
+                      audio_prompt: "Describing locations."
+                      script: "The remote control is on the TV. The magazine is under the table. The lamp is next to the sofa."
+                      questions:
+                        - "Where is the remote? (on the TV)"
+                        - "What is under the table? (the magazine)"
+                  - type: boss
+                    title: "Prepositions Boss"
+                    order: 5
+                    is_active: true
+                    content:
+                      prompt: "Prepositions and where questions."
+                      stages_covered: [1, 2, 3, 4]
+
+              - title: "Review & Module Boss"
+                order: 4
+                xp_reward: 80
+                is_active: true
+                stages:
+                  - type: vocabulary
+                    title: "Module Review"
+                    order: 1
+                    is_active: true
+                    content:
+                      prompt: "Review of all vocabulary from this module"
+                      review_items:
+                        - "family members"
+                        - "rooms and furniture"
+                        - "prepositions of place"
+                  - type: grammar
+                    title: "Module Grammar Review"
+                    order: 2
+                    is_active: true
+                    content:
+                      prompt: "Review: possessive 's, there is/are, prepositions"
+                      exercises:
+                        - "This is my ___ bag. (mother's)"
+                        - "There ___ a park near my house. (is)"
+                        - "The cat is ___ the sofa. (under)"
+                  - type: boss
+                    title: "Module Boss Fight"
+                    order: 3
+                    is_active: true
+                    content:
+                      prompt: "Comprehensive test: family, home, prepositions."
+                      stages_covered: [1, 2, 3, 4]
+
+          - title: "Daily Life"
+            description: "Present Simple, распорядок дня, еда, время."
+            order: 4
+            difficulty: 2
+            estimated_minutes: 60
+            xp_reward: 260
+            is_active: true
+            lessons:
+              - title: "Daily Routine"
+                order: 1
+                xp_reward: 55
+                is_active: true
+                stages:
+                  - type: vocabulary
+                    title: "Everyday Actions"
+                    order: 1
+                    is_active: true
+                    content:
+                      prompt: "Common daily routine verbs"
+                      words:
+                        - word: "wake up"
+                          translation: "просыпаться"
+                        - word: "get up"
+                          translation: "вставать"
+                        - word: "have breakfast"
+                          translation: "завтракать"
+                        - word: "go to school"
+                          translation: "идти в школу"
+                        - word: "come home"
+                          translation: "приходить домой"
+                        - word: "have dinner"
+                          translation: "ужинать"
+                        - word: "watch TV"
+                          translation: "смотреть телевизор"
+                        - word: "go to bed"
+                          translation: "ложиться спать"
+                  - type: grammar
+                    title: "Present Simple (I/you/we/they)"
+                    order: 2
+                    is_active: true
+                    content:
+                      prompt: "Present simple for routines with I, you, we, they"
+                      rules:
+                        - "I/You/We/They + verb: I wake up at 7 AM."
+                        - "Negative: I/You/We/They + don't + verb: I don't watch TV."
+                      exercises:
+                        - "We ___ (have) breakfast at 8 AM. (have)"
+                        - "They ___ (go) to school by bus. (go)"
+                        - "I ___ (not/like) coffee. (don't like)"
+                  - type: reading
+                    title: "Tom's Day"
+                    order: 3
+                    is_active: true
+                    content:
+                      text: "Tom gets up at 7 AM. He has breakfast at 7:30. He goes to school at 8 AM. He comes home at 3 PM. He has dinner at 6 PM. He goes to bed at 10 PM."
+                      questions:
+                        - "What time does Tom get up? (7 AM)"
+                        - "What time does he go to school? (8 AM)"
+                        - "What time does he go to bed? (10 PM)"
+                  - type: listening
+                    title: "A Day in My Life"
+                    order: 4
+                    is_active: true
+                    content:
+                      audio_prompt: "Daily routine description."
+                      script: "I get up at 6:30. I have breakfast at 7. I go to work at 8. I come home at 5 PM. I have dinner at 7 PM."
+                      questions:
+                        - "What time do I get up? (6:30)"
+                        - "What time do I go to work? (8 AM)"
+                  - type: boss
+                    title: "Routine Boss"
+                    order: 5
+                    is_active: true
+                    content:
+                      prompt: "Daily routine vocabulary and Present Simple."
+                      stages_covered: [1, 2, 3, 4]
+
+              - title: "Telling Time"
+                order: 2
+                xp_reward: 50
+                is_active: true
+                stages:
+                  - type: vocabulary
+                    title: "Time Expressions"
+                    order: 1
+                    is_active: true
+                    content:
+                      prompt: "Telling time and time-related words"
+                      words:
+                        - word: "o'clock"
+                          translation: "ровно"
+                        - word: "half past"
+                          translation: "половина"
+                        - word: "quarter past"
+                          translation: "четверть"
+                        - word: "quarter to"
+                          translation: "без четверти"
+                        - word: "in the morning (AM)"
+                          translation: "утром"
+                        - word: "in the afternoon (PM)"
+                          translation: "днем"
+                        - word: "in the evening"
+                          translation: "вечером"
+                        - word: "at night"
+                          translation: "ночью"
+                  - type: grammar
+                    title: "Prepositions of Time: at/in/on"
+                    order: 2
+                    is_active: true
+                    content:
+                      prompt: "Using at, in, on with time expressions"
+                      rules:
+                        - "at + specific time: at 7 AM, at 3:30"
+                        - "in + part of day/months/years: in the morning, in July"
+                        - "on + days/dates: on Monday, on July 5th"
+                      exercises:
+                        - "I wake up ___ 7 AM. (at)"
+                        - "I go swimming ___ the morning. (in)"
+                        - "She visits grandma ___ Sundays. (on)"
+                  - type: reading
+                    title: "Timetable"
+                    order: 3
+                    is_active: true
+                    content:
+                      text: "School starts at 8:30 AM. Lunch is at 12:15 PM. English class is on Monday and Wednesday. The exam is on July 10th."
+                      questions:
+                        - "What time does school start? (8:30 AM)"
+                        - "When is English class? (Monday and Wednesday)"
+                  - type: listening
+                    title: "What Time Is It?"
+                    order: 4
+                    is_active: true
+                    content:
+                      audio_prompt: "Telling the time."
+                      script: "It is half past two. The bus arrives at quarter to three."
+                      questions:
+                        - "What time is it now? (2:30)"
+                        - "What time does the bus arrive? (2:45)"
+                  - type: boss
+                    title: "Time Boss"
+                    order: 5
+                    is_active: true
+                    content:
+                      prompt: "Time vocabulary and prepositions of time."
+                      stages_covered: [1, 2, 3, 4]
+
+              - title: "Food & Drinks"
+                order: 3
+                xp_reward: 55
+                is_active: true
+                stages:
+                  - type: vocabulary
+                    title: "Food & Drinks"
+                    order: 1
+                    is_active: true
+                    content:
+                      prompt: "Common foods and beverages"
+                      words:
+                        - word: "bread"
+                          translation: "хлеб"
+                        - word: "milk"
+                          translation: "молоко"
+                        - word: "water"
+                          translation: "вода"
+                        - word: "coffee"
+                          translation: "кофе"
+                        - word: "tea"
+                          translation: "чай"
+                        - word: "rice"
+                          translation: "рис"
+                        - word: "chicken"
+                          translation: "курица"
+                        - word: "fish"
+                          translation: "рыба"
+                        - word: "apple"
+                          translation: "яблоко"
+                        - word: "banana"
+                          translation: "банан"
+                        - word: "sandwich"
+                          translation: "бутерброд"
+                        - word: "soup"
+                          translation: "суп"
+                  - type: grammar
+                    title: "Countable & Uncountable"
+                    order: 2
+                    is_active: true
+                    content:
+                      prompt: "Some/any with countable and uncountable nouns"
+                      rules:
+                        - "Countable: a/an, many, a few: an apple, many bananas"
+                        - "Uncountable: some, much, a little: some milk, much water"
+                        - "some in positive sentences: I have some bread."
+                        - "any in negative/questions: I don't have any milk."
+                      exercises:
+                        - "I have ___ apples. (some)"
+                        - "Do you have ___ milk? (any)"
+                        - "She doesn't eat ___ meat. (any)"
+                  - type: reading
+                    title: "My Meals"
+                    order: 3
+                    is_active: true
+                    content:
+                      text: "For breakfast, I have bread and milk. For lunch, I eat a sandwich and an apple. For dinner, I have chicken with rice."
+                      questions:
+                        - "What do I have for breakfast? (bread and milk)"
+                        - "What do I eat for lunch? (a sandwich and an apple)"
+                  - type: listening
+                    title: "At the Cafe"
+                    order: 4
+                    is_active: true
+                    content:
+                      audio_prompt: "Ordering food at a cafe."
+                      script: "I would like a cup of coffee and a sandwich. And a glass of water, please."
+                      questions:
+                        - "What drink does the person order? (coffee)"
+                        - "What food do they order? (a sandwich)"
+                  - type: boss
+                    title: "Food Boss"
+                    order: 5
+                    is_active: true
+                    content:
+                      prompt: "Food vocabulary, some/any, countable/uncountable."
+                      stages_covered: [1, 2, 3, 4]
+
+              - title: "Present Simple (he/she/it)"
+                order: 4
+                xp_reward: 55
+                is_active: true
+                stages:
+                  - type: vocabulary
+                    title: "Adverbs of Frequency"
+                    order: 1
+                    is_active: true
+                    content:
+                      prompt: "How often we do things"
+                      words:
+                        - word: "always"
+                          translation: "всегда"
+                        - word: "usually"
+                          translation: "обычно"
+                        - word: "often"
+                          translation: "часто"
+                        - word: "sometimes"
+                          translation: "иногда"
+                        - word: "rarely"
+                          translation: "редко"
+                        - word: "never"
+                          translation: "никогда"
+                  - type: grammar
+                    title: "Present Simple (3rd person)"
+                    order: 2
+                    is_active: true
+                    content:
+                      prompt: "He/she/it + verb-s/-es"
+                      rules:
+                        - "Add -s to most verbs: he eats, she drinks"
+                        - "Add -es after s/sh/ch/x/o: he watches, she goes"
+                        - "y → ies: he studies (study → studies)"
+                        - "Negative: he/she/it + doesn't + verb: She doesn't eat meat."
+                      exercises:
+                        - "He ___ (wake) up at 7 AM. (wakes)"
+                        - "She ___ (study) at the library. (studies)"
+                        - "It ___ (not/work). (doesn't work)"
+                  - type: reading
+                    title: "My Friend's Day"
+                    order: 3
+                    is_active: true
+                    content:
+                      text: "My friend Maria always gets up at 6 AM. She usually has coffee for breakfast. She often goes to the gym after work. She never watches TV at night."
+                      questions:
+                        - "How often does Maria get up at 6 AM? (always)"
+                        - "Does she watch TV at night? (Never)"
+                  - type: listening
+                    title: "His Daily Life"
+                    order: 4
+                    is_active: true
+                    content:
+                      audio_prompt: "Talking about someone's habits."
+                      script: "My brother works in a hospital. He usually starts work at 8 AM. He often eats lunch at the cafeteria. He sometimes works on weekends."
+                      questions:
+                        - "Where does my brother work? (in a hospital)"
+                        - "How often does he work on weekends? (sometimes)"
+                  - type: boss
+                    title: "Present Simple Boss"
+                    order: 5
+                    is_active: true
+                    content:
+                      prompt: "Present Simple 3rd person, adverbs of frequency."
+                      stages_covered: [1, 2, 3, 4]
+
+              - title: "Can / Can't"
+                order: 5
+                xp_reward: 55
+                is_active: true
+                stages:
+                  - type: vocabulary
+                    title: "Action Verbs"
+                    order: 1
+                    is_active: true
+                    content:
+                      prompt: "Common action verbs"
+                      words:
+                        - word: "run"
+                          translation: "бегать"
+                        - word: "swim"
+                          translation: "плавать"
+                        - word: "sing"
+                          translation: "петь"
+                        - word: "dance"
+                          translation: "танцевать"
+                        - word: "cook"
+                          translation: "готовить"
+                        - word: "drive"
+                          translation: "водить машину"
+                        - word: "play"
+                          translation: "играть"
+                        - word: "speak"
+                          translation: "говорить"
+                  - type: grammar
+                    title: "Modal verb can / can't"
+                    order: 2
+                    is_active: true
+                    content:
+                      prompt: "Expressing ability and permission"
+                      rules:
+                        - "can + verb (no to): I can swim. She can speak Spanish."
+                        - "can't (cannot): I can't drive. He can't cook."
+                        - "Question: Can you...? Can I...?"
+                      exercises:
+                        - "She ___ (can) dance. (can dance)"
+                        - "I ___ (not/can) swim. (can't swim)"
+                        - "___ you speak English? (Can)"
+                  - type: reading
+                    title: "Talents"
+                    order: 3
+                    is_active: true
+                    content:
+                      text: "My friend Tom can play guitar. His sister can sing very well. I can dance but I can't sing. My brother can cook Italian food."
+                      questions:
+                        - "What can Tom do? (play guitar)"
+                        - "Can I sing? (No, I can't.)"
+                        - "What can my brother cook? (Italian food)"
+                  - type: listening
+                    title: "What Can They Do?"
+                    order: 4
+                    is_active: true
+                    content:
+                      audio_prompt: "People talking about abilities."
+                      script: "I can speak French and English. My friend can drive but I can't."
+                      questions:
+                        - "How many languages can I speak? (two)"
+                        - "Can my friend drive? (Yes)"
+                  - type: boss
+                    title: "Ability Boss"
+                    order: 5
+                    is_active: true
+                    content:
+                      prompt: "Action verbs and can/can't."
+                      stages_covered: [1, 2, 3, 4]
+
+      - code: A1.2
+        title: "A1.2 — Moving On"
+        description: "Действия сейчас, прошлые события, способности, город."
+        order: 2
+        is_active: true
+        modules:
+          - title: "My Abilities"
+            description: "Can/can't, глаголы действия, части тела, императив."
+            order: 1
+            difficulty: 2
+            estimated_minutes: 55
+            xp_reward: 250
+            is_active: true
+            lessons:
+              - title: "Body Parts"
+                order: 1
+                xp_reward: 50
+                is_active: true
+                stages:
+                  - type: vocabulary
+                    title: "Body Parts"
+                    order: 1
+                    is_active: true
+                    content:
+                      prompt: "Parts of the human body"
+                      words:
+                        - word: "head"
+                          translation: "голова"
+                        - word: "hair"
+                          translation: "волосы"
+                        - word: "eyes"
+                          translation: "глаза"
+                        - word: "ears"
+                          translation: "уши"
+                        - word: "nose"
+                          translation: "нос"
+                        - word: "mouth"
+                          translation: "рот"
+                        - word: "hands"
+                          translation: "руки"
+                        - word: "feet"
+                          translation: "ноги (ступни)"
+                        - word: "arms"
+                          translation: "руки (от плеча)"
+                        - word: "legs"
+                          translation: "ноги"
+                  - type: grammar
+                    title: "Imperatives"
+                    order: 2
+                    is_active: true
+                    content:
+                      prompt: "Commands and instructions"
+                      rules:
+                        - "Positive imperative: Sit down. Open the door."
+                        - "Negative imperative: Don't sit down. Don't run."
+                      exercises:
+                        - "___ the window, please. (Open)"
+                        - "___ run in the hallway. (Don't)"
+                  - type: reading
+                    title: "Doctor's Advice"
+                    order: 3
+                    is_active: true
+                    content:
+                      text: "Open your mouth. Say 'Ah'. Don't move your head. Take this medicine. Drink water. Don't eat cold food."
+                      questions:
+                        - "What does the doctor say first? (Open your mouth.)"
+                        - "What should I not eat? (cold food)"
+                  - type: listening
+                    title: "Exercise Instructions"
+                    order: 4
+                    is_active: true
+                    content:
+                      audio_prompt: "Gym instructions."
+                      script: "Raise your hands. Don't bend your knees. Move your arms up and down."
+                      questions:
+                        - "What do I do with my hands? (Raise them)"
+                        - "What should I NOT do with my knees? (bend them)"
+                  - type: boss
+                    title: "Body Boss"
+                    order: 5
+                    is_active: true
+                    content:
+                      prompt: "Body parts and imperatives."
+                      stages_covered: [1, 2, 3, 4]
+
+              - title: "Hobbies & Free Time"
+                order: 2
+                xp_reward: 55
+                is_active: true
+                stages:
+                  - type: vocabulary
+                    title: "Hobbies"
+                    order: 1
+                    is_active: true
+                    content:
+                      prompt: "Free time activities"
+                      words:
+                        - word: "reading"
+                          translation: "чтение"
+                        - word: "traveling"
+                          translation: "путешествия"
+                        - word: "cooking"
+                          translation: "готовка"
+                        - word: "drawing"
+                          translation: "рисование"
+                        - word: "photography"
+                          translation: "фотография"
+                        - word: "gaming"
+                          translation: "видеоигры"
+                        - word: "fishing"
+                          translation: "рыбалка"
+                        - word: "hiking"
+                          translation: "походы"
+                  - type: grammar
+                    title: "Like + -ing"
+                    order: 2
+                    is_active: true
+                    content:
+                      prompt: "Expressing likes and dislikes with gerund"
+                      rules:
+                        - "I like + -ing: I like reading."
+                        - "I don't like + -ing: I don't like cooking."
+                        - "Question: Do you like + -ing? Do you like traveling?"
+                      exercises:
+                        - "She ___ (like) reading. (likes)"
+                        - "I ___ (not/like) getting up early. (don't like)"
+                        - "___ you like swimming? (Do)"
+                  - type: reading
+                    title: "Our Hobbies"
+                    order: 3
+                    is_active: true
+                    content:
+                      text: "I like reading books. My sister likes drawing. My father likes fishing. My mother likes cooking. We all like watching movies together."
+                      questions:
+                        - "What does my sister like? (drawing)"
+                        - "What does my father like? (fishing)"
+                  - type: listening
+                    title: "Free Time Talk"
+                    order: 4
+                    is_active: true
+                    content:
+                      audio_prompt: "Discussing hobbies."
+                      script: "A: Do you like playing sports? B: Yes, I like playing tennis. A: I don't like sports. I like reading."
+                      questions:
+                        - "What sport does B like? (tennis)"
+                        - "Does A like sports? (No, A likes reading.)"
+                  - type: boss
+                    title: "Hobbies Boss"
+                    order: 5
+                    is_active: true
+                    content:
+                      prompt: "Hobbies vocabulary and like + -ing."
+                      stages_covered: [1, 2, 3, 4]
+
+              - title: "Describing People"
+                order: 3
+                xp_reward: 55
+                is_active: true
+                stages:
+                  - type: vocabulary
+                    title: "Appearance & Personality"
+                    order: 1
+                    is_active: true
+                    content:
+                      prompt: "Describing how people look and act"
+                      words:
+                        - word: "tall"
+                          translation: "высокий"
+                        - word: "short"
+                          translation: "низкий"
+                        - word: "thin"
+                          translation: "худой"
+                        - word: "curly hair"
+                          translation: "кудрявые волосы"
+                        - word: "straight hair"
+                          translation: "прямые волосы"
+                        - word: "friendly"
+                          translation: "дружелюбный"
+                        - word: "shy"
+                          translation: "застенчивый"
+                        - word: "funny"
+                          translation: "смешной"
+                        - word: "kind"
+                          translation: "добрый"
+                  - type: grammar
+                    title: "Have got / Has got"
+                    order: 2
+                    is_active: true
+                    content:
+                      prompt: "Describing what someone has"
+                      rules:
+                        - "I/You/We/They have got: I have got blue eyes."
+                        - "He/She/It has got: She has got curly hair."
+                        - "Short: I've got, She's got"
+                        - "Negative: haven't got / hasn't got"
+                      exercises:
+                        - "She ___ (have got) blue eyes. (has got)"
+                        - "I ___ (not/have got) a car. (haven't got)"
+                        - "___ he got a sister? (Has)"
+                  - type: reading
+                    title: "My Best Friend"
+                    order: 3
+                    is_active: true
+                    content:
+                      text: "My best friend is Anna. She has got long straight hair and green eyes. She is tall and thin. She is very kind and friendly."
+                      questions:
+                        - "What color are Anna's eyes? (green)"
+                        - "What is her hair like? (long straight hair)"
+                        - "Is Anna shy? (No, she is friendly.)"
+                  - type: listening
+                    title: "Person Description"
+                    order: 4
+                    is_active: true
+                    content:
+                      audio_prompt: "Describing a person."
+                      script: "My brother is short and thin. He has got short black hair and brown eyes. He is very funny."
+                      questions:
+                        - "What color is my brother's hair? (black)"
+                        - "Is he tall? (No, he is short.)"
+                  - type: boss
+                    title: "Description Boss"
+                    order: 5
+                    is_active: true
+                    content:
+                      prompt: "Appearance vocabulary and have/has got."
+                      stages_covered: [1, 2, 3, 4]
+
+              - title: "Feelings & Emotions"
+                order: 4
+                xp_reward: 50
+                is_active: true
+                stages:
+                  - type: vocabulary
+                    title: "Emotions"
+                    order: 1
+                    is_active: true
+                    content:
+                      prompt: "Common feelings and emotions"
+                      words:
+                        - word: "happy"
+                          translation: "счастливый"
+                        - word: "sad"
+                          translation: "грустный"
+                        - word: "angry"
+                          translation: "злой"
+                        - word: "tired"
+                          translation: "уставший"
+                        - word: "hungry"
+                          translation: "голодный"
+                        - word: "thirsty"
+                          translation: "хочу пить"
+                        - word: "scared"
+                          translation: "испуганный"
+                        - word: "bored"
+                          translation: "скучающий"
+                        - word: "excited"
+                          translation: "взволнованный"
+                        - word: "nervous"
+                          translation: "нервный"
+                  - type: grammar
+                    title: "Feelings with to be"
+                    order: 2
+                    is_active: true
+                    content:
+                      prompt: "Describing emotions with to be + adjective"
+                      rules:
+                        - "I am happy. She is tired."
+                        - "Question: Are you hungry?"
+                        - "Why...? Because...: Why are you sad? Because I'm tired."
+                      exercises:
+                        - "She ___ (be) excited about the trip. (is)"
+                        - "Why ___ you angry? (are)"
+                        - "They ___ (not/be) bored. (aren't)"
+                  - type: reading
+                    title: "How Are They?"
+                    order: 3
+                    is_active: true
+                    content:
+                      text: "Tom is happy today. He has got a new bike. Anna is sad. Her cat is sick. Dad is tired after work. Mom is excited about her new job."
+                      questions:
+                        - "Why is Tom happy? (He has got a new bike.)"
+                        - "How is Dad? (tired)"
+                  - type: listening
+                    title: "How Do You Feel?"
+                    order: 4
+                    is_active: true
+                    content:
+                      audio_prompt: "Asking and answering about feelings."
+                      script: "A: How are you? B: I'm tired. I didn't sleep well. A: Why don't you drink some coffee?"
+                      questions:
+                        - "How is B feeling? (tired)"
+                        - "What does A suggest? (drink some coffee)"
+                  - type: boss
+                    title: "Emotions Boss"
+                    order: 5
+                    is_active: true
+                    content:
+                      prompt: "Emotions vocabulary and to be with adjectives."
+                      stages_covered: [1, 2, 3, 4]
+
+          - title: "Around Town"
+            description: "Город, транспорт, направления, магазины."
+            order: 2
+            difficulty: 2
+            estimated_minutes: 60
+            xp_reward: 270
+            is_active: true
+            lessons:
+              - title: "Places in Town"
+                order: 1
+                xp_reward: 50
+                is_active: true
+                stages:
+                  - type: vocabulary
+                    title: "City Places"
+                    order: 1
+                    is_active: true
+                    content:
+                      prompt: "Common locations in a city"
+                      words:
+                        - word: "hospital"
+                          translation: "больница"
+                        - word: "school"
+                          translation: "школа"
+                        - word: "supermarket"
+                          translation: "супермаркет"
+                        - word: "bank"
+                          translation: "банк"
+                        - word: "post office"
+                          translation: "почта"
+                        - word: "park"
+                          translation: "парк"
+                        - word: "restaurant"
+                          translation: "ресторан"
+                        - word: "hotel"
+                          translation: "отель"
+                        - word: "museum"
+                          translation: "музей"
+                        - word: "library"
+                          translation: "библиотека"
+                  - type: grammar
+                    title: "Asking for Directions"
+                    order: 2
+                    is_active: true
+                    content:
+                      prompt: "How to ask and give directions"
+                      rules:
+                        - "Excuse me, where is the ___? — Excuse me, where is the bank?"
+                        - "Turn left / right. — Turn left at the corner."
+                        - "Go straight. — Go straight for two blocks."
+                        - "It's on the left / right. — The library is on the right."
+                      exercises:
+                        - "Excuse me, ___ is the hospital? (where)"
+                        - "___ left at the traffic light. (Turn)"
+                  - type: reading
+                    title: "Map of My Town"
+                    order: 3
+                    is_active: true
+                    content:
+                      text: "The hospital is on Main Street. It is next to the park. The school is behind the library. The supermarket is between the bank and the post office."
+                      questions:
+                        - "Where is the hospital? (on Main Street)"
+                        - "What is next to the park? (the hospital)"
+                        - "Where is the supermarket? (between the bank and the post office)"
+                  - type: listening
+                    title: "Find the Way"
+                    order: 4
+                    is_active: true
+                    content:
+                      audio_prompt: "Directions dialog."
+                      script: "A: Excuse me, where is the museum? B: Go straight and turn right at the traffic light. It's on the left."
+                      questions:
+                        - "Where does the person want to go? (the museum)"
+                        - "Do they turn left or right? (right)"
+                  - type: boss
+                    title: "Town Boss"
+                    order: 5
+                    is_active: true
+                    content:
+                      prompt: "Places in town and directions."
+                      stages_covered: [1, 2, 3, 4]
+
+              - title: "Transportation"
+                order: 2
+                xp_reward: 55
+                is_active: true
+                stages:
+                  - type: vocabulary
+                    title: "Transport"
+                    order: 1
+                    is_active: true
+                    content:
+                      prompt: "Modes of transportation"
+                      words:
+                        - word: "bus"
+                          translation: "автобус"
+                        - word: "train"
+                          translation: "поезд"
+                        - word: "car"
+                          translation: "машина"
+                        - word: "bicycle"
+                          translation: "велосипед"
+                        - word: "taxi"
+                          translation: "такси"
+                        - word: "subway"
+                          translation: "метро"
+                        - word: "airplane"
+                          translation: "самолет"
+                        - word: "boat"
+                          translation: "лодка/корабль"
+                  - type: grammar
+                    title: "How do you go to...?"
+                    order: 2
+                    is_active: true
+                    content:
+                      prompt: "Asking about transport: by + transport / on foot"
+                      rules:
+                        - "by + transport: by bus, by car, by train"
+                        - "on foot (not by foot): I go to school on foot."
+                        - "Question: How do you go to work? — By bus."
+                      exercises:
+                        - "I go to school ___ foot. (on)"
+                        - "She goes to work ___ car. (by)"
+                        - "How ___ you go to the airport? (do)"
+                  - type: reading
+                    title: "Commuting"
+                    order: 3
+                    is_active: true
+                    content:
+                      text: "My father goes to work by train. My mother goes by car. I go to school by bus. My sister goes on foot because the school is near our house."
+                      questions:
+                        - "How does father go to work? (by train)"
+                        - "Why does my sister go on foot? (school is near)"
+                  - type: listening
+                    title: "How Do You Get Around?"
+                    order: 4
+                    is_active: true
+                    content:
+                      audio_prompt: "Discussions about transport."
+                      script: "A: How do you get to work? B: I take the subway. It's fast. A: How about weekends? B: I go by car."
+                      questions:
+                        - "How does B go to work? (by subway)"
+                        - "How does B travel on weekends? (by car)"
+                  - type: boss
+                    title: "Transport Boss"
+                    order: 5
+                    is_active: true
+                    content:
+                      prompt: "Transport vocabulary and by/on foot."
+                      stages_covered: [1, 2, 3, 4]
+
+              - title: "Shopping"
+                order: 3
+                xp_reward: 55
+                is_active: true
+                stages:
+                  - type: vocabulary
+                    title: "Shopping"
+                    order: 1
+                    is_active: true
+                    content:
+                      prompt: "Shopping and stores"
+                      words:
+                        - word: "store"
+                          translation: "магазин"
+                        - word: "price"
+                          translation: "цена"
+                        - word: "size"
+                          translation: "размер"
+                        - word: "color"
+                          translation: "цвет"
+                        - word: "cheap"
+                          translation: "дешевый"
+                        - word: "expensive"
+                          translation: "дорогой"
+                        - word: "buy"
+                          translation: "покупать"
+                        - word: "pay"
+                          translation: "платить"
+                        - word: "change"
+                          translation: "сдача"
+                  - type: grammar
+                    title: "How much is/are?"
+                    order: 2
+                    is_active: true
+                    content:
+                      prompt: "Asking about prices"
+                      rules:
+                        - "How much is + singular: How much is this T-shirt?"
+                        - "How much are + plural: How much are these shoes?"
+                        - "It is $25. / They are $50."
+                      exercises:
+                        - "How much ___ this dress? (is)"
+                        - "How much ___ these jeans? (are)"
+                        - "___ they $40? (Are)"
+                  - type: reading
+                    title: "Shopping Trip"
+                    order: 3
+                    is_active: true
+                    content:
+                      text: "Today I went shopping. I bought a T-shirt. It was $20. It is blue and cheap. My sister bought a dress. It was $50. It is expensive but beautiful."
+                      questions:
+                        - "How much was the T-shirt? ($20)"
+                        - "What color is the T-shirt? (blue)"
+                        - "How much was the dress? ($50)"
+                  - type: listening
+                    title: "At the Store"
+                    order: 4
+                    is_active: true
+                    content:
+                      audio_prompt: "Shopping dialog."
+                      script: "A: How much is this jacket? B: It is $80. A: That's expensive. Do you have a cheaper one? B: Yes, this one is $45."
+                      questions:
+                        - "How much is the first jacket? ($80)"
+                        - "How much is the cheaper one? ($45)"
+                  - type: boss
+                    title: "Shopping Boss"
+                    order: 5
+                    is_active: true
+                    content:
+                      prompt: "Shopping vocabulary and how much."
+                      stages_covered: [1, 2, 3, 4]
+
+              - title: "Weather & Seasons"
+                order: 4
+                xp_reward: 55
+                is_active: true
+                stages:
+                  - type: vocabulary
+                    title: "Weather"
+                    order: 1
+                    is_active: true
+                    content:
+                      prompt: "Weather conditions and seasons"
+                      words:
+                        - word: "sunny"
+                          translation: "солнечно"
+                        - word: "rainy"
+                          translation: "дождливо"
+                        - word: "cloudy"
+                          translation: "облачно"
+                        - word: "windy"
+                          translation: "ветрено"
+                        - word: "snowy"
+                          translation: "снежно"
+                        - word: "hot"
+                          translation: "жарко"
+                        - word: "cold"
+                          translation: "холодно"
+                        - word: "spring"
+                          translation: "весна"
+                        - word: "summer"
+                          translation: "лето"
+                        - word: "fall"
+                          translation: "осень"
+                        - word: "winter"
+                          translation: "зима"
+                  - type: grammar
+                    title: "it is + weather"
+                    order: 2
+                    is_active: true
+                    content:
+                      prompt: "Talking about weather with impersonal it"
+                      rules:
+                        - "It is + adjective: It is sunny today."
+                        - "Question: What is the weather like? / Is it cold?"
+                      exercises:
+                        - "It ___ rainy in April. (is)"
+                        - "Is ___ hot in summer? (it)"
+                        - "What is the weather ___ today? (like)"
+                  - type: reading
+                    title: "Weather Report"
+                    order: 3
+                    is_active: true
+                    content:
+                      text: "Today it is sunny and warm. Tomorrow it will be rainy and cold. On Wednesday it is cloudy and windy. In summer it is usually hot."
+                      questions:
+                        - "What is the weather like today? (sunny and warm)"
+                        - "What will the weather be tomorrow? (rainy and cold)"
+                  - type: listening
+                    title: "Weather Forecast"
+                    order: 4
+                    is_active: true
+                    content:
+                      audio_prompt: "Weather forecast."
+                      script: "Good morning! Today it is sunny and hot. Temperature is 30 degrees. Tomorrow it will be cloudy and cool."
+                      questions:
+                        - "What is today's temperature? (30 degrees)"
+                        - "What will the weather be tomorrow? (cloudy and cool)"
+                  - type: boss
+                    title: "Weather Boss"
+                    order: 5
+                    is_active: true
+                    content:
+                      prompt: "Weather vocabulary and it is."
+                      stages_covered: [1, 2, 3, 4]
+
+          - title: "Present Actions"
+            description: "Present Continuous, одежда, погода, сравнение времён."
+            order: 3
+            difficulty: 2
+            estimated_minutes: 60
+            xp_reward: 280
+            is_active: true
+            lessons:
+              - title: "Clothes"
+                order: 1
+                xp_reward: 50
+                is_active: true
+                stages:
+                  - type: vocabulary
+                    title: "Clothing"
+                    order: 1
+                    is_active: true
+                    content:
+                      prompt: "Common clothing items"
+                      words:
+                        - word: "T-shirt"
+                          translation: "футболка"
+                        - word: "jeans"
+                          translation: "джинсы"
+                        - word: "dress"
+                          translation: "платье"
+                        - word: "skirt"
+                          translation: "юбка"
+                        - word: "jacket"
+                          translation: "куртка"
+                        - word: "shoes"
+                          translation: "обувь"
+                        - word: "hat"
+                          translation: "шляпа"
+                        - word: "coat"
+                          translation: "пальто"
+                        - word: "shirt"
+                          translation: "рубашка"
+                        - word: "pants"
+                          translation: "брюки"
+                  - type: grammar
+                    title: "Present Continuous (am/is/are + -ing)"
+                    order: 2
+                    is_active: true
+                    content:
+                      prompt: "Describing actions happening now"
+                      rules:
+                        - "I am + -ing: I am wearing a blue T-shirt."
+                        - "He/She/It is + -ing: She is wearing a dress."
+                        - "You/We/They are + -ing: They are wearing jeans."
+                        - "Spelling: wear → wearing, run → running, make → making"
+                      exercises:
+                        - "She ___ (wear) a red dress. (is wearing)"
+                        - "They ___ (play) football now. (are playing)"
+                        - "I ___ (not/watch) TV right now. (am not watching)"
+                  - type: reading
+                    title: "What Are They Wearing?"
+                    order: 3
+                    is_active: true
+                    content:
+                      text: "At the party, Tom is wearing a blue shirt and black pants. Anna is wearing a beautiful dress. I am wearing jeans and a T-shirt. Everyone is having fun."
+                      questions:
+                        - "What is Tom wearing? (a blue shirt and black pants)"
+                        - "What is Anna wearing? (a beautiful dress)"
+                  - type: listening
+                    title: "Getting Dressed"
+                    order: 4
+                    is_active: true
+                    content:
+                      audio_prompt: "Describing what people are wearing."
+                      script: "Today I am wearing a white shirt and black shoes. My friend is wearing a red jacket."
+                      questions:
+                        - "What color is my shirt? (white)"
+                        - "What is my friend wearing? (a red jacket)"
+                  - type: boss
+                    title: "Clothes Boss"
+                    order: 5
+                    is_active: true
+                    content:
+                      prompt: "Clothes vocabulary and Present Continuous."
+                      stages_covered: [1, 2, 3, 4]
+
+              - title: "Actions Now"
+                order: 2
+                xp_reward: 55
+                is_active: true
+                stages:
+                  - type: vocabulary
+                    title: "More Verbs"
+                    order: 1
+                    is_active: true
+                    content:
+                      prompt: "Action verbs for things happening now"
+                      words:
+                        - word: "read"
+                          translation: "читать"
+                        - word: "write"
+                          translation: "писать"
+                        - word: "eat"
+                          translation: "есть"
+                        - word: "drink"
+                          translation: "пить"
+                        - word: "sleep"
+                          translation: "спать"
+                        - word: "work"
+                          translation: "работать"
+                        - word: "study"
+                          translation: "учиться"
+                        - word: "listen"
+                          translation: "слушать"
+                  - type: grammar
+                    title: "Present Simple vs Present Continuous"
+                    order: 2
+                    is_active: true
+                    content:
+                      prompt: "When to use each tense"
+                      rules:
+                        - "Present Simple: habits, routines, facts: I drink coffee every morning."
+                        - "Present Continuous: right now: I am drinking coffee now."
+                        - "Signal words: always, usually, every day (Simple) vs now, at the moment (Continuous)"
+                      exercises:
+                        - "I ___ (read) every night. (read)"
+                        - "I ___ (read) a book right now. (am reading)"
+                        - "She ___ (not/sleep) at the moment. (isn't sleeping)"
+                  - type: reading
+                    title: "Sunday Afternoon"
+                    order: 3
+                    is_active: true
+                    content:
+                      text: "It is Sunday afternoon. Tom usually plays football on Sundays. But today it is raining, so he is watching TV. His sister is reading a book. His parents are cooking dinner."
+                      questions:
+                        - "What does Tom usually do on Sundays? (plays football)"
+                        - "What is Tom doing now? (watching TV)"
+                        - "What are his parents doing? (cooking dinner)"
+                  - type: listening
+                    title: "What's Happening Now?"
+                    order: 4
+                    is_active: true
+                    content:
+                      audio_prompt: "Describing current actions."
+                      script: "Ssh! The baby is sleeping. I am working on my computer. My brother is listening to music in his room."
+                      questions:
+                        - "What is the baby doing? (sleeping)"
+                        - "What is my brother doing? (listening to music)"
+                  - type: boss
+                    title: "Actions Boss"
+                    order: 5
+                    is_active: true
+                    content:
+                      prompt: "Present Simple vs Present Continuous."
+                      stages_covered: [1, 2, 3, 4]
+
+              - title: "Making Requests"
+                order: 3
+                xp_reward: 50
+                is_active: true
+                stages:
+                  - type: vocabulary
+                    title: "Polite Words"
+                    order: 1
+                    is_active: true
+                    content:
+                      prompt: "Words for polite requests"
+                      words:
+                        - word: "could"
+                          translation: "мог бы"
+                        - word: "would"
+                          translation: "бы"
+                        - word: "may"
+                          translation: "можно"
+                        - word: "help"
+                          translation: "помогать"
+                        - word: "pass"
+                          translation: "передать"
+                        - word: "lend"
+                          translation: "одалживать"
+                  - type: grammar
+                    title: "Can/Could/May for requests"
+                    order: 2
+                    is_active: true
+                    content:
+                      prompt: "Polite requests and offers"
+                      rules:
+                        - "Can I...? — informal: Can I have some water?"
+                        - "Could I/you...? — more polite: Could you help me?"
+                        - "May I...? — formal: May I open the window?"
+                        - "Would you like...? — offers: Would you like some tea?"
+                      exercises:
+                        - "___ I have your pen, please? (Can/Could/May)"
+                        - "___ you help me with this? (Could)"
+                  - type: reading
+                    title: "Polite Conversations"
+                    order: 3
+                    is_active: true
+                    content:
+                      text: "At the restaurant: A: Could I see the menu, please? B: Of course. Here you are. A: Thank you. Could I have some water? B: Certainly."
+                      questions:
+                        - "What does customer A ask first? (to see the menu)"
+                        - "What does the customer ask for second? (some water)"
+                  - type: listening
+                    title: "Polite Requests"
+                    order: 4
+                    is_active: true
+                    content:
+                      audio_prompt: "Polite request dialog."
+                      script: "A: Would you like some coffee? B: Yes, please. A: Could you pass the sugar? B: Sure, here you are."
+                      questions:
+                        - "What does A offer? (coffee)"
+                        - "What does A ask for? (the sugar)"
+                  - type: boss
+                    title: "Requests Boss"
+                    order: 5
+                    is_active: true
+                    content:
+                      prompt: "Polite requests and modal verbs."
+                      stages_covered: [1, 2, 3, 4]
+
+          - title: "My Life Story"
+            description: "Past Simple (was/were, regular, irregular), даты."
+            order: 4
+            difficulty: 3
+            estimated_minutes: 65
+            xp_reward: 300
+            is_active: true
+            lessons:
+              - title: "Past Simple: was/were"
+                order: 1
+                xp_reward: 55
+                is_active: true
+                stages:
+                  - type: vocabulary
+                    title: "Time Expressions (Past)"
+                    order: 1
+                    is_active: true
+                    content:
+                      prompt: "Time words used with past tense"
+                      words:
+                        - word: "yesterday"
+                          translation: "вчера"
+                        - word: "last week"
+                          translation: "на прошлой неделе"
+                        - word: "last month"
+                          translation: "в прошлом месяце"
+                        - word: "last year"
+                          translation: "в прошлом году"
+                        - word: "ago"
+                          translation: "назад"
+                        - word: "in 2010"
+                          translation: "в 2010 году"
+                        - word: "when I was..."
+                          translation: "когда я был..."
+                  - type: grammar
+                    title: "was / were (past of to be)"
+                    order: 2
+                    is_active: true
+                    content:
+                      prompt: "Past tense of to be"
+                      rules:
+                        - "I/He/She/It was: I was at home yesterday."
+                        - "You/We/They were: They were at school."
+                        - "Negative: wasn't / weren't"
+                        - "Question: Was he...? Were they...?"
+                      exercises:
+                        - "I ___ at the park yesterday. (was)"
+                        - "They ___ not at home last night. (were)"
+                        - "___ she at work? (Was)"
+                  - type: reading
+                    title: "Yesterday"
+                    order: 3
+                    is_active: true
+                    content:
+                      text: "Yesterday was Sunday. I was at home. My brother was at the park. Our parents were at a restaurant. The weather was beautiful."
+                      questions:
+                        - "Where was I yesterday? (at home)"
+                        - "Where were my parents? (at a restaurant)"
+                        - "What was the weather like? (beautiful)"
+                  - type: listening
+                    title: "Where Were You?"
+                    order: 4
+                    is_active: true
+                    content:
+                      audio_prompt: "Talking about past locations."
+                      script: "A: Where were you yesterday? B: I was at the library. A: Was it busy? B: Yes, it was very busy."
+                      questions:
+                        - "Where was B yesterday? (at the library)"
+                        - "Was it busy? (yes)"
+                  - type: boss
+                    title: "Was/Were Boss"
+                    order: 5
+                    is_active: true
+                    content:
+                      prompt: "was/were, past time expressions."
+                      stages_covered: [1, 2, 3, 4]
+
+              - title: "Past Simple: Regular Verbs"
+                order: 2
+                xp_reward: 55
+                is_active: true
+                stages:
+                  - type: vocabulary
+                    title: "Regular Verbs"
+                    order: 1
+                    is_active: true
+                    content:
+                      prompt: "Common regular verbs in base form"
+                      words:
+                        - word: "walk → walked"
+                          translation: "гулял"
+                        - word: "watch → watched"
+                          translation: "смотрел"
+                        - word: "play → played"
+                          translation: "играл"
+                        - word: "study → studied"
+                          translation: "учился"
+                        - word: "cook → cooked"
+                          translation: "готовил"
+                        - word: "clean → cleaned"
+                          translation: "убирал"
+                        - word: "visit → visited"
+                          translation: "посетил"
+                        - word: "work → worked"
+                          translation: "работал"
+                  - type: grammar
+                    title: "Past Simple: Regular -ed"
+                    order: 2
+                    is_active: true
+                    content:
+                      prompt: "Forming past simple with regular verbs"
+                      rules:
+                        - "Add -ed: walk → walked, play → played"
+                        - "Add -d if ends in e: dance → danced"
+                        - "y → ied: study → studied (but: play → played)"
+                        - "Double consonant: stop → stopped"
+                        - "Negative: didn't + verb: I didn't watch TV."
+                      exercises:
+                        - "I ___ (walk) to school yesterday. (walked)"
+                        - "She ___ (study) for the exam. (studied)"
+                        - "They ___ (not/play) football. (didn't play)"
+                  - type: reading
+                    title: "Last Weekend"
+                    order: 3
+                    is_active: true
+                    content:
+                      text: "Last weekend I visited my grandmother. We cooked dinner together. She cooked chicken and I cooked rice. Then we watched a movie. I walked home at 8 PM."
+                      questions:
+                        - "Who did I visit? (my grandmother)"
+                        - "What did we do? (cooked dinner, watched a movie)"
+                        - "What time did I walk home? (8 PM)"
+                  - type: listening
+                    title: "What Did You Do?"
+                    order: 4
+                    is_active: true
+                    content:
+                      audio_prompt: "Past weekend story."
+                      script: "Yesterday I cleaned my room. Then I studied English for two hours. Later, I played video games with my brother."
+                      questions:
+                        - "What did I do first? (cleaned my room)"
+                        - "How long did I study English? (two hours)"
+                  - type: boss
+                    title: "Regular Past Boss"
+                    order: 5
+                    is_active: true
+                    content:
+                      prompt: "Past Simple regular verbs + didn't."
+                      stages_covered: [1, 2, 3, 4]
+
+              - title: "Past Simple: Irregular Verbs"
+                order: 3
+                xp_reward: 60
+                is_active: true
+                stages:
+                  - type: vocabulary
+                    title: "Irregular Verbs"
+                    order: 1
+                    is_active: true
+                    content:
+                      prompt: "Common irregular past forms"
+                      words:
+                        - word: "go → went"
+                          translation: "шел / пошел"
+                        - word: "eat → ate"
+                          translation: "ел"
+                        - word: "drink → drank"
+                          translation: "пил"
+                        - word: "have → had"
+                          translation: "имел"
+                        - word: "do → did"
+                          translation: "делал"
+                        - word: "see → saw"
+                          translation: "видел"
+                        - word: "buy → bought"
+                          translation: "купил"
+                        - word: "take → took"
+                          translation: "взял"
+                        - word: "get → got"
+                          translation: "получил"
+                        - word: "make → made"
+                          translation: "сделал"
+                  - type: grammar
+                    title: "Irregular Past: Questions & Negatives"
+                    order: 2
+                    is_active: true
+                    content:
+                      prompt: "Irregular verbs in questions and negative"
+                      rules:
+                        - "Questions: Did + subject + base verb: Did you go to school?"
+                        - "Negative: didn't + base: I didn't eat breakfast."
+                        - "Wh- questions: What did you do? Where did you go?"
+                      exercises:
+                        - "I ___ (go) to the cinema yesterday. (went)"
+                        - "___ you see the movie? (Did)"
+                        - "She ___ (not/eat) meat. (didn't eat)"
+                  - type: reading
+                    title: "My Day Out"
+                    order: 3
+                    is_active: true
+                    content:
+                      text: "Yesterday I went to the shopping center. I bought a new jacket. I saw my friend there. We had lunch together. I ate a sandwich and drank juice. I took the bus home."
+                      questions:
+                        - "Where did I go? (to the shopping center)"
+                        - "What did I buy? (a new jacket)"
+                        - "What did I eat? (a sandwich)"
+                  - type: listening
+                    title: "A Busy Day"
+                    order: 4
+                    is_active: true
+                    content:
+                      audio_prompt: "Past tense story."
+                      script: "I got up at 7 AM. I made coffee and had breakfast. Then I went to work. I took the train. I saw many people on the train."
+                      questions:
+                        - "What time did I get up? (7 AM)"
+                        - "How did I go to work? (by train)"
+                  - type: boss
+                    title: "Irregular Past Boss"
+                    order: 5
+                    is_active: true
+                    content:
+                      prompt: "Irregular past verbs and did questions."
+                      stages_covered: [1, 2, 3, 4]
+
+              - title: "Talking About Dates"
+                order: 4
+                xp_reward: 55
+                is_active: true
+                stages:
+                  - type: vocabulary
+                    title: "Months & Ordinals"
+                    order: 1
+                    is_active: true
+                    content:
+                      prompt: "Months of the year and ordinal numbers"
+                      words:
+                        - word: "January"
+                          translation: "январь"
+                        - word: "February"
+                          translation: "февраль"
+                        - word: "March"
+                          translation: "март"
+                        - word: "April"
+                          translation: "апрель"
+                        - word: "May"
+                          translation: "май"
+                        - word: "June"
+                          translation: "июнь"
+                        - word: "July"
+                          translation: "июль"
+                        - word: "August"
+                          translation: "август"
+                        - word: "September"
+                          translation: "сентябрь"
+                        - word: "October"
+                          translation: "октябрь"
+                        - word: "November"
+                          translation: "ноябрь"
+                        - word: "December"
+                          translation: "декабрь"
+                        - word: "first, second, third..."
+                          translation: "первый, второй, третий..."
+                  - type: grammar
+                    title: "Ordinal Numbers & Dates"
+                    order: 2
+                    is_active: true
+                    content:
+                      prompt: "Writing and saying dates"
+                      rules:
+                        - "on + date: on July 5th (on July fifth)"
+                        - "in + month/year: in January, in 1998"
+                        - "Born: I was born on July 5, 1998. (in spoken: July fifth, nineteen ninety-eight)"
+                      exercises:
+                        - "My birthday is ___ May 15th. (on)"
+                        - "I was born ___ 1998. (in)"
+                        - "___ October 31st is Halloween. (on)"
+                  - type: reading
+                    title: "Important Dates"
+                    order: 3
+                    is_active: true
+                    content:
+                      text: "My birthday is on March 12th. My sister's birthday is on January 3rd. Christmas is on December 25th. New Year is on January 1st. I was born in 1998."
+                      questions:
+                        - "When is my birthday? (March 12th)"
+                        - "When is Christmas? (December 25th)"
+                  - type: listening
+                    title: "Birthdays"
+                    order: 4
+                    is_active: true
+                    content:
+                      audio_prompt: "Talking about birthdays."
+                      script: "A: When is your birthday? B: It's on June 8th. A: And your brother? B: His is on November 20th."
+                      questions:
+                        - "When is B's birthday? (June 8th)"
+                        - "When is B's brother's birthday? (November 20th)"
+                  - type: boss
+                    title: "Dates Boss"
+                    order: 5
+                    is_active: true
+                    content:
+                      prompt: "Months, ordinals, dates with on/in."
+                      stages_covered: [1, 2, 3, 4]
+
+              - title: "Review & Module Boss"
+                order: 5
+                xp_reward: 90
+                is_active: true
+                stages:
+                  - type: vocabulary
+                    title: "Module Vocabulary Review"
+                    order: 1
+                    is_active: true
+                    content:
+                      prompt: "Review all A1.2 vocabulary"
+                  - type: grammar
+                    title: "Module Grammar Review"
+                    order: 2
+                    is_active: true
+                    content:
+                      prompt: "Past Simple (was/were, regular, irregular), dates"
+                  - type: boss
+                    title: "A1.2 Boss Fight"
+                    order: 3
+                    is_active: true
+                    content:
+                      prompt: "Comprehensive A1.2 test: past tense, dates, vocabulary."
+                      stages_covered: [1, 2, 3, 4]
+
+  - code: A2
+    title: "A2 — Pre-Intermediate"
+    description: "Путешествия, еда, здоровье, повседневные ситуации."
+    order: 2
+    is_active: true
+    sublevels:
+      - code: A2.1
+        title: "A2.1 — Lower Pre-Intermediate"
+        description: "Расширение базового словаря, прошлые и будущие события."
+        order: 1
+        is_active: true
+        modules:
+          - title: "Travel & Transport"
+            description: "Путешествия, бронирование, аэропорт, отель."
+            order: 1
+            difficulty: 3
+            estimated_minutes: 65
+            xp_reward: 300
+            is_active: true
+            lessons:
+              - title: "At the Airport"
+                order: 1
+                xp_reward: 60
+                is_active: true
+                stages:
+                  - type: vocabulary
+                    title: "Airport Words"
+                    order: 1
+                    is_active: true
+                    content:
+                      prompt: "Airport and flight vocabulary"
+                      words:
+                        - word: "flight"
+                          translation: "рейс"
+                        - word: "departure"
+                          translation: "вылет"
+                        - word: "arrival"
+                          translation: "прибытие"
+                        - word: "boarding pass"
+                          translation: "посадочный талон"
+                        - word: "luggage"
+                          translation: "багаж"
+                        - word: "passport"
+                          translation: "паспорт"
+                        - word: "gate"
+                          translation: "выход на посадку"
+                        - word: "seat"
+                          translation: "место"
+                        - word: "delay"
+                          translation: "задержка"
+                        - word: "check-in"
+                          translation: "регистрация"
+                  - type: grammar
+                    title: "Present Perfect (experience)"
+                    order: 2
+                    is_active: true
+                    content:
+                      prompt: "Present Perfect for life experiences"
+                      rules:
+                        - "have/has + past participle: I have flown to Italy."
+                        - "Ever/never: Have you ever been to Paris? I have never flown."
+                        - "Past participle: flown (fly), been (be), seen (see)"
+                      exercises:
+                        - "I have ___ (be) to London. (been)"
+                        - "Have you ___ (eat) Italian food? (eaten)"
+                        - "She has never ___ (fly) before. (flown)"
+                  - type: reading
+                    title: "My First Flight"
+                    order: 3
+                    is_active: true
+                    content:
+                      text: "Last summer I took my first flight. I went to New York. I checked in online. At the airport, I showed my passport. The flight was delayed by two hours. But I arrived safely. I have flown three times since then."
+                      questions:
+                        - "Where did I go? (New York)"
+                        - "How long was the delay? (two hours)"
+                        - "How many times have I flown now? (three)"
+                  - type: listening
+                    title: "Airport Announcements"
+                    order: 4
+                    is_active: true
+                    content:
+                      audio_prompt: "Airport PA announcements."
+                      script: "Attention passengers! Flight BA249 to London is now boarding at Gate 12. Please have your boarding pass ready."
+                      questions:
+                        - "Which flight is boarding? (BA249)"
+                        - "Which gate? (Gate 12)"
+                  - type: boss
+                    title: "Airport Boss"
+                    order: 5
+                    is_active: true
+                    content:
+                      prompt: "Airport vocabulary and Present Perfect."
+                      stages_covered: [1, 2, 3, 4]
+
+              - title: "Hotel & Accommodation"
+                order: 2
+                xp_reward: 60
+                is_active: true
+                stages:
+                  - type: vocabulary
+                    title: "Hotel Words"
+                    order: 1
+                    is_active: true
+                    content:
+                      prompt: "Hotel booking and stay vocabulary"
+                      words:
+                        - word: "reservation"
+                          translation: "бронь"
+                        - word: "single room"
+                          translation: "одноместный номер"
+                        - word: "double room"
+                          translation: "двухместный номер"
+                        - word: "key card"
+                          translation: "ключ-карта"
+                        - word: "check-in"
+                          translation: "заселение"
+                        - word: "check-out"
+                          translation: "выезд"
+                        - word: "room service"
+                          translation: "обслуживание в номере"
+                        - word: "complimentary"
+                          translation: "бесплатный"
+                        - word: "wifi"
+                          translation: "вай-фай"
+                  - type: grammar
+                    title: "Will for future (predictions/promises)"
+                    order: 2
+                    is_active: true
+                    content:
+                      prompt: "Using will for future actions"
+                      rules:
+                        - "will + verb: I will call you tomorrow."
+                        - "won't (will not): The hotel won't be expensive."
+                        - "Question: Will you...?"
+                      exercises:
+                        - "I ___ (call) you when I arrive. (will call)"
+                        - "The hotel ___ (not/be) far from the airport. (won't be)"
+                        - "___ you need a taxi? (Will)"
+                  - type: reading
+                    title: "Booking a Hotel"
+                    order: 3
+                    is_active: true
+                    content:
+                      text: "I will stay at the Grand Hotel. I have a reservation for a double room. The hotel has free wifi and complimentary breakfast. I will check in on Friday and check out on Monday. The room won't be ready until 3 PM."
+                      questions:
+                        - "Which hotel will I stay at? (the Grand Hotel)"
+                        - "When will I check in? (Friday)"
+                        - "Is breakfast free? (Yes, it is complimentary.)"
+                  - type: listening
+                    title: "Hotel Check-in"
+                    order: 4
+                    is_active: true
+                    content:
+                      audio_prompt: "Hotel reception dialog."
+                      script: "A: Good evening. I have a reservation. B: What name is it under? A: Smith. B: Yes, Mr. Smith. A double room for three nights. Here is your key card."
+                      questions:
+                        - "What is the guest's name? (Smith)"
+                        - "How many nights? (three)"
+                        - "What type of room? (double)"
+                  - type: boss
+                    title: "Hotel Boss"
+                    order: 5
+                    is_active: true
+                    content:
+                      prompt: "Hotel vocab, will for future, booking conversation."
+                      stages_covered: [1, 2, 3, 4]
+
+              - title: "Ordering at a Restaurant"
+                order: 3
+                xp_reward: 55
+                is_active: true
+                stages:
+                  - type: vocabulary
+                    title: "Restaurant"
+                    order: 1
+                    is_active: true
+                    content:
+                      prompt: "Restaurant and food ordering"
+                      words:
+                        - word: "menu"
+                          translation: "меню"
+                        - word: "appetizer"
+                          translation: "закуска"
+                        - word: "main course"
+                          translation: "основное блюдо"
+                        - word: "dessert"
+                          translation: "десерт"
+                        - word: "beverage"
+                          translation: "напиток"
+                        - word: "bill"
+                          translation: "счет"
+                        - word: "tip"
+                          translation: "чаевые"
+                        - word: "waiter"
+                          translation: "официант"
+                        - word: "reservation"
+                          translation: "бронь столика"
+                  - type: grammar
+                    title: "Would like & polite requests"
+                    order: 2
+                    is_active: true
+                    content:
+                      prompt: "Using would like to order politely"
+                      rules:
+                        - "I would like... (I'd like): I'd like chicken, please."
+                        - "We would like...: We'd like the bill."
+                        - "Question: Would you like...? Would you like dessert?"
+                      exercises:
+                        - "I ___ (would like) a coffee. (I'd like)"
+                        - "___ you like some water? (Would)"
+                        - "We ___ (would like) the menu. (We'd like)"
+                  - type: reading
+                    title: "Dinner Out"
+                    order: 3
+                    is_active: true
+                    content:
+                      text: "Last night we went to an Italian restaurant. I had a reservation for 7 PM. The waiter brought the menu. I ordered spaghetti as a main course. My friend ordered pizza. We had tiramisu for dessert. The bill was $65. We left a 15% tip."
+                      questions:
+                        - "What did I order as a main course? (spaghetti)"
+                        - "How much was the bill? ($65)"
+                        - "What percentage tip did we leave? (15%)"
+                  - type: listening
+                    title: "At the Restaurant"
+                    order: 4
+                    is_active: true
+                    content:
+                      audio_prompt: "Restaurant ordering dialog."
+                      script: "A: Are you ready to order? B: Yes, I'd like the grilled salmon with vegetables. A: And for you, sir? C: I'll have the steak, medium rare."
+                      questions:
+                        - "What does B order? (grilled salmon with vegetables)"
+                        - "How does C want the steak? (medium rare)"
+                  - type: boss
+                    title: "Restaurant Boss"
+                    order: 5
+                    is_active: true
+                    content:
+                      prompt: "Restaurant vocab, would like, ordering."
+                      stages_covered: [1, 2, 3, 4]
+
+              - title: "Comparatives"
+                order: 4
+                xp_reward: 55
+                is_active: true
+                stages:
+                  - type: vocabulary
+                    title: "Travel Adjectives"
+                    order: 1
+                    is_active: true
+                    content:
+                      prompt: "Adjectives for comparing travel options"
+                      words:
+                        - word: "cheap → cheaper"
+                          translation: "дешевле"
+                        - word: "fast → faster"
+                          translation: "быстрее"
+                        - word: "comfortable → more comfortable"
+                          translation: "удобнее"
+                        - word: "expensive → more expensive"
+                          translation: "дороже"
+                        - word: "good → better"
+                          translation: "лучше"
+                        - word: "bad → worse"
+                          translation: "хуже"
+                        - word: "far → farther/further"
+                          translation: "дальше"
+                  - type: grammar
+                    title: "Comparative Adjectives"
+                    order: 2
+                    is_active: true
+                    content:
+                      prompt: "Comparing two things using comparative"
+                      rules:
+                        - "Short adj + er: cheap → cheaper, big → bigger, easy → easier"
+                        - "Long adj: more + adj: more comfortable, more expensive"
+                        - "Irregular: good → better, bad → worse, far → farther"
+                        - "than: The train is faster than the bus."
+                      exercises:
+                        - "A plane is ___ (fast) than a train. (faster)"
+                        - "A hotel is ___ (expensive) than a hostel. (more expensive)"
+                        - "This car is ___ (good) than that one. (better)"
+                  - type: reading
+                    title: "Which Is Better?"
+                    order: 3
+                    is_active: true
+                    content:
+                      text: "Flying to New York is faster than driving, but it is more expensive. A train is cheaper than a plane, but it takes longer. Taking a bus is the cheapest, but it is less comfortable. I prefer flying because it is more convenient."
+                      questions:
+                        - "Is flying cheaper than driving? (No, it is more expensive.)"
+                        - "What is the cheapest option? (bus)"
+                        - "Why does the author prefer flying? (more convenient)"
+                  - type: listening
+                    title: "Comparing Options"
+                    order: 4
+                    is_active: true
+                    content:
+                      audio_prompt: "Comparing travel options."
+                      script: "A: Should we take the train or the bus? B: The train is faster but more expensive. A: Let's take the train then. I want to arrive earlier."
+                      questions:
+                        - "Which is faster? (the train)"
+                        - "Why do they choose the train? (to arrive earlier)"
+                  - type: boss
+                    title: "Comparatives Boss"
+                    order: 5
+                    is_active: true
+                    content:
+                      prompt: "Comparative adjectives and than."
+                      stages_covered: [1, 2, 3, 4]
+
+              - title: "Superlatives"
+                order: 5
+                xp_reward: 55
+                is_active: true
+                stages:
+                  - type: vocabulary
+                    title: "Superlative Adjectives"
+                    order: 1
+                    is_active: true
+                    content:
+                      prompt: "Talking about extremes"
+                      words:
+                        - word: "cheapest"
+                          translation: "самый дешевый"
+                        - word: "most expensive"
+                          translation: "самый дорогой"
+                        - word: "best"
+                          translation: "лучший"
+                        - word: "worst"
+                          translation: "худший"
+                        - word: "nearest"
+                          translation: "ближайший"
+                        - word: "farthest"
+                          translation: "самый дальний"
+                  - type: grammar
+                    title: "Superlative Adjectives"
+                    order: 2
+                    is_active: true
+                    content:
+                      prompt: "Comparing three or more things"
+                      rules:
+                        - "the + short adj + est: the cheapest, the biggest, the easiest"
+                        - "the most + long adj: the most expensive, the most comfortable"
+                        - "Irregular: the best, the worst, the farthest"
+                      exercises:
+                        - "This is ___ (cheap) hotel in town. (the cheapest)"
+                        - "It is ___ (good) restaurant in the city. (the best)"
+                        - "She is ___ (intelligent) student in class. (the most intelligent)"
+                  - type: reading
+                    title: "World Records"
+                    order: 3
+                    is_active: true
+                    content:
+                      text: "The Burj Khalifa is the tallest building in the world. The Pacific Ocean is the largest ocean. The cheetah is the fastest land animal. Antarctica is the coldest continent."
+                      questions:
+                        - "What is the tallest building? (Burj Khalifa)"
+                        - "Which is the largest ocean? (the Pacific)"
+                        - "What is the fastest land animal? (cheetah)"
+                  - type: listening
+                    title: "Best in Class"
+                    order: 4
+                    is_active: true
+                    content:
+                      audio_prompt: "Describing superlatives."
+                      script: "This is the best hotel I have ever stayed at. The service is the friendliest and the rooms are the most comfortable."
+                      questions:
+                        - "What does the speaker think about the hotel? (the best they've stayed at)"
+                        - "What is the service like? (the friendliest)"
+                  - type: boss
+                    title: "Superlatives Boss"
+                    order: 5
+                    is_active: true
+                    content:
+                      prompt: "Superlative adjectives and world knowledge."
+                      stages_covered: [1, 2, 3, 4]
+
+      - code: A2.2
+        title: "A2.2 — Upper Pre-Intermediate"
+        description: "Планы на будущее, опыт, обязательства."
+        order: 2
+        is_active: true
+        modules:
+          - title: "Health & Body"
+            description: "Здоровье, симптомы, советы."
+            order: 1
+            difficulty: 3
+            estimated_minutes: 65
+            xp_reward: 300
+            is_active: true
+            lessons:
+              - title: "Body & Health"
+                order: 1
+                xp_reward: 55
+                is_active: true
+                stages:
+                  - type: vocabulary
+                    title: "Health"
+                    order: 1
+                    is_active: true
+                    content:
+                      words:
+                        - word: "headache"
+                          translation: "головная боль"
+                        - word: "toothache"
+                          translation: "зубная боль"
+                        - word: "fever"
+                          translation: "температура"
+                        - word: "cough"
+                          translation: "кашель"
+                        - word: "sore throat"
+                          translation: "боль в горле"
+                        - word: "cold"
+                          translation: "простуда"
+                        - word: "medicine"
+                          translation: "лекарство"
+                        - word: "doctor"
+                          translation: "врач"
+                  - type: grammar
+                    title: "Should / Shouldn't for advice"
+                    order: 2
+                    is_active: true
+                    content:
+                      prompt: "Giving advice using should"
+                      rules:
+                        - "should + verb: You should drink water."
+                        - "shouldn't + verb: You shouldn't eat cold food."
+                        - "Question: Should I...?"
+                      exercises:
+                        - "You ___ (should) rest. (should)"
+                        - "He ___ (should not) smoke. (shouldn't)"
+                        - "___ I see a doctor? (Should)"
+                  - type: reading
+                    title: "At the Doctor"
+                    order: 3
+                    is_active: true
+                    content:
+                      text: "I went to the doctor because I had a fever and a sore throat. The doctor said: You should drink warm tea with honey. You shouldn't go to work. You should take this medicine three times a day."
+                      questions:
+                        - "Why did I go to the doctor? (fever and sore throat)"
+                        - "What should I drink? (warm tea with honey)"
+                        - "How often should I take the medicine? (three times a day)"
+                  - type: listening
+                    title: "Doctor's Advice"
+                    order: 4
+                    is_active: true
+                    content:
+                      audio_prompt: "Doctor giving advice."
+                      script: "You have a cold. You should rest for two days. You should drink lots of water. You shouldn't exercise."
+                      questions:
+                        - "How many days should I rest? (two)"
+                        - "What shouldn't I do? (exercise)"
+                  - type: boss
+                    title: "Health Boss"
+                    order: 5
+                    is_active: true
+                    content:
+                      prompt: "Health vocab and should/shouldn't."
+                      stages_covered: [1, 2, 3, 4]
+
+              - title: "Going to for plans"
+                order: 2
+                xp_reward: 55
+                is_active: true
+                stages:
+                  - type: vocabulary
+                    title: "Future Plans"
+                    order: 1
+                    is_active: true
+                    content:
+                      prompt: "Vocabulary for talking about plans"
+                      words:
+                        - word: "plan"
+                          translation: "план"
+                        - word: "intend"
+                          translation: "намереваться"
+                        - word: "arrangement"
+                          translation: "договоренность"
+                        - word: "invitation"
+                          translation: "приглашение"
+                        - word: "appointment"
+                          translation: "встреча / прием"
+                  - type: grammar
+                    title: "be going to + verb"
+                    order: 2
+                    is_active: true
+                    content:
+                      prompt: "Expressing plans and intentions"
+                      rules:
+                        - "am/is/are going to + verb: I am going to visit my parents."
+                        - "am/is/are not going to: She is not going to come."
+                        - "Question: Are you going to...?"
+                      exercises:
+                        - "I ___ (am going to) study medicine. (am going to)"
+                        - "They ___ (not/go to) travel this year. (aren't going to)"
+                        - "___ she going to join us? (Is)"
+                  - type: reading
+                    title: "Weekend Plans"
+                    order: 3
+                    is_active: true
+                    content:
+                      text: "This weekend I am going to visit my grandparents. My sister is going to stay home and study. My parents are going to go hiking. We are all going to have dinner together on Sunday."
+                      questions:
+                        - "What am I going to do? (visit grandparents)"
+                        - "What is my sister going to do? (stay home and study)"
+                        - "When are we all going to have dinner? (Sunday)"
+                  - type: listening
+                    title: "What Are Your Plans?"
+                    order: 4
+                    is_active: true
+                    content:
+                      audio_prompt: "Discussing plans."
+                      script: "A: What are you going to do this summer? B: I am going to travel to Italy. A: How long are you going to stay? B: Two weeks."
+                      questions:
+                        - "Where is B going to travel? (Italy)"
+                        - "How long is B going to stay? (two weeks)"
+                  - type: boss
+                    title: "Plans Boss"
+                    order: 5
+                    is_active: true
+                    content:
+                      prompt: "Future plans with going to."
+                      stages_covered: [1, 2, 3, 4]
+
+              - title: "Present Perfect for experience"
+                order: 3
+                xp_reward: 60
+                is_active: true
+                stages:
+                  - type: vocabulary
+                    title: "Experience Verbs"
+                    order: 1
+                    is_active: true
+                    content:
+                      prompt: "Past participles for experience"
+                      words:
+                        - word: "been (be)"
+                          translation: "был"
+                        - word: "seen (see)"
+                          translation: "видел"
+                        - word: "tried (try)"
+                          translation: "пробовал"
+                        - word: "visited (visit)"
+                          translation: "посетил"
+                        - word: "eaten (eat)"
+                          translation: "ел"
+                        - word: "traveled (travel)"
+                          translation: "путешествовал"
+                  - type: grammar
+                    title: "Present Perfect — ever/never/been to"
+                    order: 2
+                    is_active: true
+                    content:
+                      prompt: "Experience using Present Perfect"
+                      rules:
+                        - "Have you ever...?: Have you ever been to Japan?"
+                        - "I have never...: I have never tried sushi."
+                        - "been to (visited): I have been to Paris three times."
+                        - "gone to (went and is there): She has gone to the store."
+                      exercises:
+                        - "Have you ever ___ (eat) Thai food? (eaten)"
+                        - "I have never ___ (fly) in a helicopter. (flown)"
+                        - "She has ___ to London twice. (been)"
+                  - type: reading
+                    title: "My Travel Experiences"
+                    order: 3
+                    is_active: true
+                    content:
+                      text: "I have visited ten countries. I have been to France, Italy, and Spain. I have never been to Asia. My friend has seen the Northern Lights in Norway. I have tried many different foods. I have eaten escargots in France."
+                      questions:
+                        - "How many countries have I visited? (ten)"
+                        - "Have I been to Asia? (No, never.)"
+                        - "What has my friend seen in Norway? (the Northern Lights)"
+                  - type: listening
+                    title: "Have You Ever...?"
+                    order: 4
+                    is_active: true
+                    content:
+                      audio_prompt: "Asking about experiences."
+                      script: "A: Have you ever tried bungee jumping? B: No, I haven't. It sounds scary! A: I have tried it once. It was amazing."
+                      questions:
+                        - "Has B tried bungee jumping? (No)"
+                        - "How many times has A tried it? (once)"
+                  - type: boss
+                    title: "Experience Boss"
+                    order: 5
+                    is_active: true
+                    content:
+                      prompt: "Present Perfect with ever/never/been."
+                      stages_covered: [1, 2, 3, 4]
+
+              - title: "Must / Have to"
+                order: 4
+                xp_reward: 55
+                is_active: true
+                stages:
+                  - type: vocabulary
+                    title: "Rules & Obligations"
+                    order: 1
+                    is_active: true
+                    content:
+                      prompt: "Words about rules and duties"
+                      words:
+                        - word: "rule"
+                          translation: "правило"
+                        - word: "must"
+                          translation: "должен"
+                        - word: "requirement"
+                          translation: "требование"
+                        - word: "prohibition"
+                          translation: "запрет"
+                        - word: "permission"
+                          translation: "разрешение"
+                        - word: "duty"
+                          translation: "обязанность"
+                  - type: grammar
+                    title: "Must / Mustn't / Don't have to"
+                    order: 2
+                    is_active: true
+                    content:
+                      prompt: "Obligation and prohibition"
+                      rules:
+                        - "must + verb (strong obligation): You must wear a seatbelt."
+                        - "mustn't + verb (prohibition): You mustn't smoke here."
+                        - "don't have to (no obligation): You don't have to pay."
+                      exercises:
+                        - "You ___ (must) wear a helmet. (must)"
+                        - "You ___ (not/must) park here. (mustn't)"
+                        - "We ___ (not/have to) hurry. (don't have to)"
+                  - type: reading
+                    title: "School Rules"
+                    order: 3
+                    is_active: true
+                    content:
+                      text: "At our school, students must wear a uniform. They mustn't use phones in class. They don't have to stay for lunch if they go home. They must be on time for lessons."
+                      questions:
+                        - "What must students wear? (a uniform)"
+                        - "What mustn't they do? (use phones in class)"
+                        - "What don't they have to do? (stay for lunch if they go home)"
+                  - type: listening
+                    title: "Airport Rules"
+                    order: 4
+                    is_active: true
+                    content:
+                      audio_prompt: "Airport security rules."
+                      script: "You must show your passport. You mustn't carry liquids over 100ml. You don't have to remove your shoes."
+                      questions:
+                        - "What must you show? (your passport)"
+                        - "What mustn't you carry? (liquids over 100ml)"
+                  - type: boss
+                    title: "Obligation Boss"
+                    order: 5
+                    is_active: true
+                    content:
+                      prompt: "Must/mustn't/don't have to."
+                      stages_covered: [1, 2, 3, 4]
+
+  - code: B1
+    title: "B1 — Intermediate"
+    description: "Связная речь, обсуждение идей, мнения, гипотезы."
+    order: 3
+    is_active: false
+    sublevels:
+      - code: B1.1
+        title: "B1.1 — Lower Intermediate"
+        description: "Продолженные времена, условные предложения, косвенная речь."
+        order: 1
+        is_active: false
+        modules:
+          - title: "Past Continuous & Narrative"
+            description: "Описание событий в прошлом, рассказы."
+            order: 1
+            difficulty: 3
+            estimated_minutes: 70
+            xp_reward: 320
+            is_active: false
+            lessons:
+              - title: "Past Continuous"
+                order: 1
+                xp_reward: 60
+                is_active: true
+                stages:
+                  - type: vocabulary
+                    title: "Narrative Words"
+                    order: 1
+                    is_active: true
+                    content:
+                      prompt: "Words for storytelling"
+                      words:
+                        - word: "while"
+                          translation: "в то время как"
+                        - word: "when"
+                          translation: "когда"
+                        - word: "suddenly"
+                          translation: "внезапно"
+                        - word: "meanwhile"
+                          translation: "тем временем"
+                        - word: "eventually"
+                          translation: "в конце концов"
+                        - word: "after that"
+                          translation: "после этого"
+                  - type: grammar
+                    title: "Past Continuous (was/were + -ing)"
+                    order: 2
+                    is_active: true
+                    content:
+                      prompt: "Action in progress in the past"
+                      rules:
+                        - "was/were + -ing: I was reading when she called."
+                        - "Interrupted action: I was watching TV when the power went out."
+                        - "Two parallel actions: I was cooking while she was cleaning."
+                      exercises:
+                        - "I ___ (read) when he arrived. (was reading)"
+                        - "While I ___ (walk) home, it started to rain. (was walking)"
+                        - "They ___ (not/listen) when I explained. (weren't listening)"
+                  - type: reading
+                    title: "A Strange Night"
+                    order: 3
+                    is_active: true
+                    content:
+                      text: "At 11 PM, I was reading a book in bed. Suddenly, I heard a noise. I was getting up to check when the lights went out. My brother was sleeping, so I didn't want to wake him. While I was looking for my phone, I heard the noise again."
+                      questions:
+                        - "What was I doing at 11 PM? (reading a book)"
+                        - "What happened while I was getting up? (the lights went out)"
+                        - "Why didn't I wake my brother? (he was sleeping)"
+                  - type: listening
+                    title: "What Was Happening?"
+                    order: 4
+                    is_active: true
+                    content:
+                      audio_prompt: "Describing past events."
+                      script: "Yesterday around 6 PM, I was driving home from work. While I was waiting at a traffic light, I saw a car accident. I was calling 911 when the ambulance arrived."
+                      questions:
+                        - "What was I doing at 6 PM? (driving home)"
+                        - "What did I see at the traffic light? (a car accident)"
+                  - type: boss
+                    title: "Past Continuous Boss"
+                    order: 5
+                    is_active: true
+                    content:
+                      prompt: "Past Continuous, interrupted actions, narrative."
+                      stages_covered: [1, 2, 3, 4]
+
+              - title: "Past Perfect"
+                order: 2
+                xp_reward: 65
+                is_active: true
+                stages:
+                  - type: vocabulary
+                    title: "Sequence Words"
+                    order: 1
+                    is_active: true
+                    content:
+                      prompt: "Showing order of events"
+                      words:
+                        - word: "already"
+                          translation: "уже"
+                        - word: "never...before"
+                          translation: "никогда раньше"
+                        - word: "by the time"
+                          translation: "к тому времени как"
+                        - word: "after"
+                          translation: "после"
+                        - word: "before"
+                          translation: "до"
+                  - type: grammar
+                    title: "Past Perfect (had + past participle)"
+                    order: 2
+                    is_active: true
+                    content:
+                      prompt: "Action completed before another past action"
+                      rules:
+                        - "had + past participle: I had finished dinner when she arrived."
+                        - "By the time + past: By the time we arrived, the movie had started."
+                        - "After/before: After I had eaten, I went to bed."
+                      exercises:
+                        - "By the time I got there, she ___ (leave). (had left)"
+                        - "I ___ (never/see) such a beautiful place before. (had never seen)"
+                        - "After he ___ (finish) work, he went home. (had finished)"
+                  - type: reading
+                    title: "A Terrible Morning"
+                    order: 3
+                    is_active: true
+                    content:
+                      text: "By the time I woke up, my alarm had already rung an hour ago. I had forgotten to set it. When I finally got to the kitchen, my toast had burned. After I had rushed to the bus stop, the bus had already left. I had never had such a bad morning before."
+                      questions:
+                        - "What had happened by the time I woke up? (the alarm had rung an hour ago)"
+                        - "Why did the toast burn? (I had forgotten about it)"
+                        - "Had the bus left when I arrived? (Yes, it had.)"
+                  - type: listening
+                    title: "Before and After"
+                    order: 4
+                    is_active: true
+                    content:
+                      audio_prompt: "Story with past perfect."
+                      script: "When I arrived at the airport, I realized I had left my passport at home. I had checked my bags before I remembered. By the time my friend brought it, I had missed my flight."
+                      questions:
+                        - "What had I left at home? (my passport)"
+                        - "What had happened by the time my friend arrived? (I had missed my flight)"
+                  - type: boss
+                    title: "Past Perfect Boss"
+                    order: 5
+                    is_active: true
+                    content:
+                      prompt: "Past Perfect, narrative sequence, by the time."
+                      stages_covered: [1, 2, 3, 4]
+
+              - title: "First Conditional"
+                order: 3
+                xp_reward: 60
+                is_active: true
+                stages:
+                  - type: grammar
+                    title: "If + Present Simple, will + verb"
+                    order: 1
+                    is_active: true
+                    content:
+                      prompt: "Real/possible future conditions"
+                      rules:
+                        - "If + present simple, will + base: If it rains, I will stay home."
+                        - "Comma if if-clause comes first: If you study, you will pass."
+                        - "No comma if main clause first: You will pass if you study."
+                        - "Unless = if not: Unless you hurry, you will be late."
+                      exercises:
+                        - "If it ___ (rain), I ___ (stay) home. (rains, will stay)"
+                        - "We ___ (go) to the beach if it ___ (be) sunny. (will go, is)"
+                        - "Unless you ___ (study), you ___ (not/pass). (study, won't pass)"
+                  - type: reading
+                    title: "Planning Ahead"
+                    order: 2
+                    is_active: true
+                    content:
+                      text: "If the weather is nice tomorrow, we will go to the park. If it rains, we will visit a museum. If we go to the park, I will bring a picnic. My friend will come if he finishes his work."
+                      questions:
+                        - "What will happen if the weather is nice? (we will go to the park)"
+                        - "What will happen if it rains? (we will visit a museum)"
+                        - "When will my friend come? (if he finishes his work)"
+                  - type: listening
+                    title: "If This Happens..."
+                    order: 3
+                    is_active: true
+                    content:
+                      audio_prompt: "Discussing possibilities."
+                      script: "If I get the job, I will move to Chicago. I will find an apartment if the salary is good. If I don't like it, I will come back."
+                      questions:
+                        - "What will happen if they get the job? (move to Chicago)"
+                        - "What will they do if the salary is good? (find an apartment)"
+                  - type: boss
+                    title: "First Conditional Boss"
+                    order: 4
+                    is_active: true
+                    content:
+                      prompt: "First conditional, unless."
+                      stages_covered: [1, 2, 3, 4]
+
+      - code: B1.2
+        title: "B1.2 — Upper Intermediate"
+        description: "Условные 2-го типа, пассив, косвенная речь."
+        order: 2
+        is_active: false
+        modules:
+          - title: "Second Conditional & Hypotheticals"
+            description: "Гипотетические ситуации, советы, пожелания."
+            order: 1
+            difficulty: 4
+            estimated_minutes: 75
+            xp_reward: 350
+            is_active: false
+            lessons:
+              - title: "Second Conditional"
+                order: 1
+                xp_reward: 65
+                is_active: true
+                stages:
+                  - type: grammar
+                    title: "If + Past Simple, would + verb"
+                    order: 1
+                    is_active: true
+                    content:
+                      prompt: "Unreal/hypothetical present conditions"
+                      rules:
+                        - "If + past simple, would + base: If I had money, I would travel."
+                        - "Were for all subjects: If I were you, I would accept."
+                        - "Could/might: If I studied more, I could pass."
+                      exercises:
+                        - "If I ___ (have) a car, I ___ (drive) to work. (had, would drive)"
+                        - "If she ___ (be) taller, she ___ (can) play basketball. (were, could)"
+                        - "What ___ you ___ (do) if you won the lottery? (would, do)"
+                  - type: reading
+                    title: "Dreams and Wishes"
+                    order: 2
+                    is_active: true
+                    content:
+                      text: "If I had a million dollars, I would buy a house by the beach. I would travel around the world. If I could speak five languages, I would work as a translator. If I were more confident, I would start my own business."
+                      questions:
+                        - "What would I do if I had a million dollars? (buy a house, travel)"
+                        - "What would I do if I could speak five languages? (work as a translator)"
+                        - "What would I do if I were more confident? (start a business)"
+                  - type: listening
+                    title: "What If...?"
+                    order: 3
+                    is_active: true
+                    content:
+                      audio_prompt: "Dreams and hypotheticals."
+                      script: "If I lived in London, I would visit all the museums. I would go to concerts every week. I would learn British English."
+                      questions:
+                        - "Where would the person live? (London)"
+                        - "What would they visit? (all the museums)"
+                  - type: boss
+                    title: "Second Conditional Boss"
+                    order: 4
+                    is_active: true
+                    content:
+                      prompt: "Second conditional, wishes, hypotheticals."
+                      stages_covered: [1, 2, 3, 4]
+
+              - title: "Passive Voice (Present & Past)"
+                order: 2
+                xp_reward: 70
+                is_active: true
+                stages:
+                  - type: grammar
+                    title: "am/is/are + past participle / was/were + pp"
+                    order: 1
+                    is_active: true
+                    content:
+                      prompt: "When the action is more important than who does it"
+                      rules:
+                        - "Present passive: am/is/are + pp: English is spoken worldwide."
+                        - "Past passive: was/were + pp: The book was written in 1990."
+                        - "By + agent: The cake was made by my mother."
+                      exercises:
+                        - "Coffee ___ (grow) in Brazil. (is grown)"
+                        - "The window ___ (break) last night. (was broken)"
+                        - "Rome ___ (not/build) in a day. (wasn't built)"
+                  - type: reading
+                    title: "How Things Are Made"
+                    order: 2
+                    is_active: true
+                    content:
+                      text: "Chocolate is made from cocoa beans. The beans are grown in tropical countries. They are harvested by farmers. Then the beans are roasted and ground. Finally, sugar and milk are added. The first chocolate bar was made in 1847."
+                      questions:
+                        - "What is chocolate made from? (cocoa beans)"
+                        - "Where are cocoa beans grown? (tropical countries)"
+                        - "When was the first chocolate bar made? (1847)"
+                  - type: listening
+                    title: "Famous Places"
+                    order: 3
+                    is_active: true
+                    content:
+                      audio_prompt: "Describing landmarks in passive."
+                      script: "The Eiffel Tower was built in 1889. It was designed by Gustave Eiffel. It is visited by millions of tourists every year."
+                      questions:
+                        - "When was the Eiffel Tower built? (1889)"
+                        - "Who designed it? (Gustave Eiffel)"
+                  - type: boss
+                    title: "Passive Boss"
+                    order: 4
+                    is_active: true
+                    content:
+                      prompt: "Present and Past Passive."
+                      stages_covered: [1, 2, 3, 4]
+
+              - title: "Reported Speech"
+                order: 3
+                xp_reward: 70
+                is_active: true
+                stages:
+                  - type: grammar
+                    title: "Said / told + backshift"
+                    order: 1
+                    is_active: true
+                    content:
+                      prompt: "Reporting what someone said"
+                      rules:
+                        - "said (that): He said (that) he was tired."
+                        - "told someone (that): She told me (that) she was happy."
+                        - "Tense backshift: present → past, past → past perfect"
+                        - "Pronoun change: I → he/she, my → his/her"
+                      exercises:
+                        - "\"I am hungry\" → He said he ___ hungry. (was)"
+                        - "\"I have finished\" → She said she ___ finished. (had)"
+                        - "\"We will come\" → They said they ___ come. (would)"
+
+  - code: B2
+    title: "B2 — Upper-Intermediate"
+    description: "Абстрактные темы, аргументация, сложные тексты."
+    order: 4
+    is_active: false
+    sublevels:
+      - code: B2.1
+        title: "B2.1 — Lower Advanced"
+        order: 1
+        is_active: false
+        modules:
+          - title: "Complex Grammar"
+            description: "Mixed conditionals, narrative tenses, emphasis."
+            order: 1
+            difficulty: 4
+            estimated_minutes: 80
+            xp_reward: 400
+            is_active: false
+            lessons:
+              - title: "Third Conditional"
+                order: 1
+                xp_reward: 75
+                is_active: true
+                stages:
+                  - type: grammar
+                    title: "If + had + pp, would have + pp"
+                    order: 1
+                    is_active: true
+                    content:
+                      prompt: "Unreal past conditions (regrets)"
+                      rules:
+                        - "If + past perfect, would have + pp: If I had studied, I would have passed."
+                        - "Could have / might have: I could have been a doctor."
+                      exercises:
+                        - "If I ___ (know), I ___ (come). (had known, would have come)"
+                        - "She ___ (not/miss) the train if she ___ (leave) earlier. (wouldn't have missed, had left)"
+
+            # ... (B2 and C1 follow same pattern — see full file for detail)
+
+      - code: B2.2
+        title: "B2.2 — Upper Advanced"
+        order: 2
+        is_active: false
+
+  - code: C1
+    title: "C1 — Advanced"
+    description: "Свободное владение, нюансы, идиомы, академический язык."
+    order: 5
+    is_active: false
+    sublevels:
+      - code: C1.1
+        title: "C1.1 — Proficient"
+        order: 1
+        is_active: false
+        modules:
+          - title: "Academic English"
+            description: "Формальный язык, эссе, презентации."
+            order: 1
+            difficulty: 5
+            estimated_minutes: 90
+            xp_reward: 500
+            is_active: false
+            lessons: []
+
+      - code: C1.2
+        title: "C1.2 — Mastery"
+        order: 2
+        is_active: false
+        modules:
+          - title: "Advanced Communication"
+            description: "Переговоры, дебаты, идиоматическая речь."
+            order: 1
+            difficulty: 5
+            estimated_minutes: 90
+            xp_reward: 550
+            is_active: false
+            lessons: []
