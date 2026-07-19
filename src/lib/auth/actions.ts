@@ -10,7 +10,7 @@ export async function login(formData: FormData) {
   const password = formData.get("password") as string;
 
   const { error } = await supabase.auth.signInWithPassword({ email, password });
-  if (error) throw new Error(error.message);
+  if (error) throw new Error(typeof error.message === "string" && error.message ? error.message : "Invalid login credentials");
 
   revalidatePath("/", "layout");
   redirect("/dashboard");
@@ -27,7 +27,7 @@ export async function register(formData: FormData) {
     password,
     options: { data: { username } },
   });
-  if (error) throw new Error(error.message);
+  if (error) throw new Error(typeof error.message === "string" && error.message ? error.message : "Registration failed. Please try again.");
 
   revalidatePath("/", "layout");
   redirect("/dashboard");
