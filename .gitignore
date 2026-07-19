@@ -6,3 +6,5 @@ out/
 .env.production
 *.local
 .next
+tsconfig.tsbuildinfo
+.DS_Store
