@@ -1,0 +1,157 @@
+@layer base {
+  /* === Gold Gradient Borders === */
+  .rpg-card-border {
+    position: relative;
+    border-radius: var(--radius);
+    background-clip: padding-box;
+    border: 1px solid transparent;
+  }
+
+  .rpg-card-border::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 1px;
+    background: linear-gradient(135deg, var(--primary), #8b6914, var(--primary));
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+  }
+
+  /* === Glow Effects === */
+  .rpg-glow {
+    box-shadow: 0 0 15px color-mix(in srgb, var(--primary) 40%, transparent),
+                0 0 30px color-mix(in srgb, var(--primary) 20%, transparent);
+  }
+
+  .rpg-glow-accent {
+    box-shadow: 0 0 15px color-mix(in srgb, var(--accent) 40%, transparent),
+                0 0 30px color-mix(in srgb, var(--accent) 20%, transparent);
+  }
+
+  .rpg-glow-success {
+    box-shadow: 0 0 15px color-mix(in srgb, var(--success) 40%, transparent),
+                0 0 30px color-mix(in srgb, var(--success) 20%, transparent);
+  }
+
+  .rpg-glow-destructive {
+    box-shadow: 0 0 15px color-mix(in srgb, var(--destructive) 40%, transparent),
+                0 0 30px color-mix(in srgb, var(--destructive) 20%, transparent);
+  }
+
+  /* === Custom Scrollbar === */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: var(--background);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--muted);
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--primary);
+  }
+
+  /* === Health Bar === */
+  .rpg-health-bar {
+    background: linear-gradient(90deg, var(--destructive), #ff6b35, var(--success));
+    transition: width 0.3s ease;
+  }
+
+  .rpg-health-bar.low {
+    background: var(--destructive);
+    animation: rpg-pulse 1s infinite;
+  }
+
+  /* === XP Bar === */
+  .rpg-xp-bar {
+    background: linear-gradient(90deg, #8b6914, var(--primary), #ffd700);
+    transition: width 0.5s ease;
+  }
+
+  /* === Mana Bar === */
+  .rpg-mana-bar {
+    background: linear-gradient(90deg, #0055aa, var(--accent), #80eeff);
+    transition: width 0.3s ease;
+  }
+
+  /* === Keyframe Animations === */
+  @keyframes rpg-level-up-glow {
+    0%, 100% {
+      box-shadow:
+        0 0 5px var(--primary),
+        0 0 10px color-mix(in srgb, var(--primary) 50%, transparent);
+    }
+    50% {
+      box-shadow:
+        0 0 20px var(--primary),
+        0 0 40px var(--accent),
+        0 0 60px color-mix(in srgb, var(--primary) 30%, transparent);
+    }
+  }
+
+  @keyframes rpg-xp-pulse {
+    0%, 100% {
+      opacity: 1;
+      transform: scaleX(1);
+    }
+    50% {
+      opacity: 0.8;
+      transform: scaleX(1.02);
+    }
+  }
+
+  @keyframes rpg-pulse {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.6;
+    }
+  }
+
+  @keyframes rpg-mana-glow {
+    0%, 100% {
+      box-shadow: 0 0 5px var(--accent);
+    }
+    50% {
+      box-shadow: 0 0 20px var(--accent),
+                  0 0 40px color-mix(in srgb, var(--accent) 30%, transparent);
+    }
+  }
+
+  /* Utility animation classes */
+  .rpg-animate-level-up {
+    animation: rpg-level-up-glow 2s ease-in-out infinite;
+  }
+
+  .rpg-animate-xp-pulse {
+    animation: rpg-xp-pulse 1.5s ease-in-out infinite;
+  }
+
+  .rpg-animate-pulse {
+    animation: rpg-pulse 1.5s ease-in-out infinite;
+  }
+
+  .rpg-animate-mana-glow {
+    animation: rpg-mana-glow 2s ease-in-out infinite;
+  }
+
+  /* === RPG Focus Ring === */
+  .rpg-focus-ring:focus-visible,
+  button:focus-visible,
+  input:focus-visible,
+  a:focus-visible {
+    outline: 2px solid var(--ring);
+    outline-offset: 2px;
+    transition: outline-offset 0.1s ease;
+  }
+}
