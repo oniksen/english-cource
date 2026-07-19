@@ -85,7 +85,7 @@ export function VocabularyStage({ content, onComplete }: VocabularyStageProps) {
 
       <div className="grid grid-cols-2 gap-2">
         <AnimatePresence mode="popLayout">
-          {options.map((choice) => {
+          {options.map((choice, i) => {
             let variant:
               | "default"
               | "outline"
@@ -97,7 +97,7 @@ export function VocabularyStage({ content, onComplete }: VocabularyStageProps) {
             }
             return (
               <motion.div
-                key={`${index}-${choice}`}
+                key={`${index}-${i}`}
                 layout
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}

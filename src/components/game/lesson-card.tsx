@@ -18,6 +18,7 @@ interface LessonCardProps {
   locked: boolean;
   progress?: number;
   isFirstUnlocked?: boolean;
+  onClick?: () => void;
 }
 
 function DifficultyStars({ orderIndex }: { orderIndex: number }) {
@@ -37,6 +38,7 @@ export function LessonCard({
   locked,
   progress,
   isFirstUnlocked,
+  onClick,
 }: LessonCardProps) {
   return (
     <motion.div
@@ -45,6 +47,7 @@ export function LessonCard({
       animate={{ opacity: 1, y: 0 }}
       whileHover={locked ? undefined : { scale: 1.02, y: -2 }}
       transition={{ type: "spring", stiffness: 300, damping: 20 }}
+      onClick={locked ? undefined : onClick}
       className={cn(
         "group relative rounded-xl border bg-card p-4 transition-all",
         locked

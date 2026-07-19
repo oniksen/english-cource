@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useRouter } from "next/navigation";
 import { ScrollText } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { LessonCard } from "@/components/game/lesson-card";
@@ -28,6 +29,7 @@ export function DungeonLessonList({
   moduleTitle,
   moduleIcon,
 }: DungeonLessonListProps) {
+  const router = useRouter();
   const sorted = [...lessons].sort((a, b) => a.order_index - b.order_index);
   const firstUnlockedIndex = sorted.findIndex(
     (l) => !userProgress[l.id]?.completed && !sorted.find(
@@ -91,6 +93,7 @@ export function DungeonLessonList({
                   locked={locked}
                   progress={progress?.score ? progress.score / 100 : undefined}
                   isFirstUnlocked={isFirstUnlocked}
+                  onClick={locked ? undefined : () => router.push(`/lessons/${lesson.id}`)}
                 />
               </motion.div>
             );
