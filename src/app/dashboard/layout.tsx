@@ -23,7 +23,7 @@ export default async function DashboardLayout({
 
   const navItems = [
     { href: "/dashboard", label: "Dashboard", icon: LayoutDashboard },
-    { href: "/world-map", label: "World Map", icon: Globe },
+    { href: "/map", label: "World Map", icon: Globe },
     { href: "/profile", label: "Profile", icon: User },
     ...(isAdmin ? [{ href: "/admin", label: "Admin", icon: Shield }] : []),
   ];

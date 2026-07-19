@@ -62,7 +62,7 @@ export function DungeonLessonList({
             const prevComplete =
               i === 0
                 ? true
-                : sorted.slice(0, i).every((l) => userProgress.get(l.id)?.completed);
+                : sorted.slice(0, i).every((l) => userProgress[l.id]?.completed);
             const locked = !prevComplete && !completed;
             const isFirstUnlocked =
               !completed && !locked && i === firstUnlockedIndex;
