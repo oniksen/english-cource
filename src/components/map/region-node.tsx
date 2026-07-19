@@ -45,7 +45,7 @@ export function RegionNode({ code, title, progress, locked, highlighted }: Regio
     <button
       type="button"
       onClick={() => {
-        if (!locked) router.push(`/modules?level=${code}`);
+        if (!locked) router.push(`/levels/${code.toLowerCase()}`);
       }}
       disabled={locked}
       className={cn(

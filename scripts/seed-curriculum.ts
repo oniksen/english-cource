@@ -116,6 +116,7 @@ async function main() {
       }
       console.log(`    Sublevel "${sub.code}" — id: ${subRow!.id}`);
 
+      if (!sub.modules) continue;
       for (const mod of sub.modules) {
         const { data: modRow, error: modErr } = await supabase
           .from("modules")

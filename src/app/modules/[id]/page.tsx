@@ -89,7 +89,7 @@ export default async function ModulePage({ params }: PageProps) {
   return (
     <div className="mx-auto max-w-2xl space-y-8 py-8">
       <Link
-        href="/world-map"
+        href="/map"
         className="inline-flex items-center gap-1 text-sm text-muted-foreground hover:text-primary transition-colors"
       >
         <ArrowLeft className="size-4" />

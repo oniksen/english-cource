@@ -8,3 +8,8 @@ out/
 .next
 tsconfig.tsbuildinfo
 .DS_Store
+
+# Seed script output
+seed-batch-*.sql
+seed-curriculum.sql
+scripts/generate-seed-sql.ts
